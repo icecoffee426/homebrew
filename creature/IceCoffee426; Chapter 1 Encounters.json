@@ -60,7 +60,7 @@
 			"miscTags": ["MW", "MLW"],
 			"hasFluff": true,
 			"fluff": {
-				"name": "Assassin Acolyte",
+				"name": "Mysterious Thug",
 				"entries": [
 					{
 						"type": "entries",
@@ -68,7 +68,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"These amaeteur assassins were sent to terrorise the Baloch university campus, motivations and hirers unknown. Oppression, drought, disease, or famine can often drive otherwise honest folk to a life of they otherwise would not have chosen..."
+									"These amaeteur thugs were sent to terrorise the Baloch university campus, motivations and hirers unknown. Oppression, drought, disease, or poverty can often drive otherwise honest folk to a life they otherwise would not have chosen..."
 								]
 							}
 						]
@@ -79,19 +79,10 @@
 				"stealth": "+3",
 				"acrobatics": "+3"
 			},
-			"trait": [
-				{
-					"name": "Sneak Attack (1/Turn)",
-					"entries": [
-						"The assassin deals an extra {@dice 1d4} damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that isn't incapacitated and the assassin doesn't have disadvantage on the attack roll."
-					]
-				}
-			],
-			"traitTags": ["Sneak Attack"],
 			"damageTags": ["S"]
 		},
 		{
-			"name": "Assassin Trickster",
+			"name": "Mysterious Assassin",
 			"source": "BalochCh1Encounters",
 			"size": ["M"],
 			"type": {
@@ -108,8 +99,8 @@
 				}
 			],
 			"hp": {
-				"formula": "6d8 + 12",
-				"average": 39
+				"formula": "5d8 + 12",
+				"average": 34
 			},
 			"speed": {
 				"walk": 30
@@ -133,18 +124,12 @@
 			"passive": 12,
 			"resist": ["poison"],
 			"languages": ["Common", "Northern", "Cant"],
-			"cr": "4",
+			"cr": "3",
 			"trait": [
-				{
-					"name": "Assassinate",
-					"entries": [
-						"During its first turn, the assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassin scores against a {@quickref Surprise|PHB|3|0|surprised} creature is a critical hit."
-					]
-				},
 				{
 					"name": "Sneak Attack (1/Turn)",
 					"entries": [
-						"The assassin deals an extra {@dice 2d6} damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that isn't {@condition incapacitated} and the assassin doesn't have disadvantage on the attack roll."
+						"The assassin deals an extra {@dice 1d6} damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that isn't {@condition incapacitated} and the assassin doesn't have disadvantage on the attack roll."
 					]
 				}
 			],
@@ -158,13 +143,12 @@
 				{
 					"name": "Hand Crossbow",
 					"entries": [
-						"{@atk rw} {@hit 6} to hit, range 80 ft, one target. {@damage 1d4+3} piercing damage."
+						"{@atk rw} {@hit 6} to hit, range 80 ft, one target. {@damage 1d4+2} piercing damage."
 					]
 				}
 			],
 			"attachedItems": ["dagger|phb", "light crossbow|phb"],
 			"traitTags": ["Sneak Attack"],
-			"actionTags": ["Multiattack"],
 			"languageTags": ["C"],
 			"miscTags": ["MW", "MLW", "RW"],
 			"hasFluff": true,
@@ -177,7 +161,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"The mysterious assassin trickster who was sent to cause havoc at the Baloch University performance bar. Clearly from the Northern kingdoms, although it is unknown what his motivations were or who hired him."
+									"The mysterious trickster who was sent to cause havoc at the Baloch University performance bar. Clearly from the Northern kingdoms, although it is unknown what his motivations were or who hired him."
 								]
 							}
 						]
@@ -205,7 +189,7 @@
 								"{@spell tasha's hideous laughter|PHB|Hideous Laughter}",
 								"{@spell silvery barbs|SCC|Silvery Barbs}"
 							],
-							"slots": 3
+							"slots": 2
 						}
 					},
 					"type": "spellcasting"
@@ -214,9 +198,9 @@
 			"spellcastingTags": ["O"],
 			"bonus": [
 				{
-					"name": "Dagger",
+					"name": "Cunning Action",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft, one target. {@h}6 ({@damage 1d4}) piercing damage."
+						"Can disengage, hide or dash as a bonus action."
 					]
 				}
 			],
