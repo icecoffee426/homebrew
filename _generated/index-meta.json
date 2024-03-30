@@ -2,5 +2,9 @@
 	"IceCoffee426; Player Characters.json": {
 		"n": ["Baloch Player Characters"],
 		"a": ["BPCs"]
+	},
+	"IceCoffee426; Shamayilm Chronicles.json": {
+		"n": ["The Shamayilm Chronicles"],
+		"a": ["SeIC"]
 	}
 }

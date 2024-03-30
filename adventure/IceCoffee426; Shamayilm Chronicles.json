@@ -1,0 +1,54 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "ShamayilmChronicles",
+				"abbreviation": "SeIC",
+				"full": "The Shamayilm Chronicles",
+				"version": "1.0.0",
+				"authors": ["IceCoffee426"],
+				"convertedBy": ["IceCoffee426"]
+			}
+		],
+		"dateAdded": 1711757098,
+		"dateLastModified": 1711757098
+	},
+	"adventure": [
+		{
+			"name": "The Shamayilm Chronicles",
+			"id": "SeIC",
+			"source": "SeIC",
+			"group": "homebrew",
+			"contents": [{ "name": "Introduction" }],
+			"level": { "start": 2, "end": 8 },
+			"published": "2024-03-30",
+			"storyline": "TBC"
+		}
+	],
+	"adventureData": [
+		{
+			"source": "SeIC",
+			"id": "SeIC",
+			"data": [
+				{
+					"type": "section",
+					"name": "Introduction",
+					"entries": [
+						"The town of Ravenshead has fallen to dark forces. During the last new moon, demons poured forth from the cathedral's crypts and slaughtered the townsfolk. Now, the few surviving villagers have fled to a nearby town in search of help. Fearing that the demonic invasion might flow out into nearby settlements, the local constabulary have offered a reward to whoever can close the portal allowing them into our world.",
+						"Unbeknownst to most, a portal was opened by the local clergy when they read from a forbidden book found deep beneath the cathedral. This has allowed a Pit Lord to take up residence in the crypts and summon forth more demonic henchmen. Unless he is slain, the forces of Hell will continue to pour forth and invade the material plane.",
+						{
+							"type": "entries",
+							"name": "Adventure Hooks",
+							"entries": [
+								"Wrath of the Demon Lord is an adventure for four 8th level adventurers. With good play, they can advance to 9th level. The adventure can take place in any town set in a civilized area. Choose one of the hooks below or make up your own.",
+								"{@b {@i A Dark Artifact.}} The characters heard of a book of great power buried beneath a nearby cathedral. They went in search of it only to find that the town has been overrun by demons.",
+								"{@b {@i A Pious Purpose.}} The characters heard of the demonic incursion in a nearby town and set out to seal whatever portal they're coming through.",
+								"{@b {@i A Righteous Reward.}} The characters have been offered 2,400 gp in exchange for defeating the source of the demonic invasion and bringing peace to the town."
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

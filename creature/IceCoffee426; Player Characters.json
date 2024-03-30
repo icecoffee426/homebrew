@@ -52,7 +52,6 @@
 			"senses": ["darkvision 60 ft."],
 			"passive": 12,
 			"languages": ["Common", "Northern", "Ancient"],
-			"resist": ["psychic"],
 			"trait": [
 				{ "name": "Proficiency Bonus", "entries": ["{@dice +2}"] },
 				{
@@ -60,7 +59,7 @@
 					"entries": ["{@dice 1d20+4|+4} (with Temporal Awareness)"]
 				},
 				{
-					"name": "Tool Proficiency: {@item Gaming Set|PHB}",
+					"name": "Tool Proficiency: {@item Gaming Set|PHB} +5",
 					"entries": []
 				}
 			],
@@ -158,7 +157,7 @@
 				"athletics": "+5",
 				"arcana": "+4",
 				"history": "+4",
-				"persuasion": "+1"
+				"perception": "+2"
 			},
 			"senses": ["darkvision 60 ft."],
 			"passive": 10,
@@ -249,7 +248,6 @@
 			"wis": 17,
 			"cha": 10,
 			"save": {
-				"con": "+4",
 				"wis": "+5",
 				"cha": "+2"
 			},
@@ -257,12 +255,10 @@
 				"medicine": "+5",
 				"religion": "+1",
 				"survival": "+4",
-				"persuasion": "+2"
+				"perception": "+5"
 			},
-			"senses": ["{@feat resilient|PHB|Resilient} (Constitution"],
 			"passive": 13,
 			"languages": ["Common", "Northern"],
-			"resist": ["thunder"],
 			"trait": [
 				{ "name": "Proficiency Bonus", "entries": ["{@dice +2}"] },
 				{ "name": "Initiative", "entries": ["{@dice 1d20+1|+1}"] },
@@ -275,7 +271,7 @@
 					"entries": [""]
 				},
 				{
-					"name": "Tool Proficiency: {@item Herbalism Kit|PHB}",
+					"name": "Tool Proficiency: {@item Herbalism Kit|PHB} +5",
 					"entries": []
 				}
 			],
@@ -378,8 +374,8 @@
 				"sleight of hand": "+5",
 				"stealth": "+5"
 			},
-			"passive": 11,
-			"languages": ["Common"],
+			"passive": 13,
+			"languages": ["Common", "Cant"],
 			"resist": ["fire"],
 			"trait": [
 				{ "name": "Proficiency Bonus", "entries": ["{@dice +2}"] },
@@ -403,7 +399,7 @@
 					"entries": ["{@dice 2d6} fire, 30ft line, save DC 13"]
 				},
 				{
-					"name": "Tool Proficiency: {@item Thieves' Tools|PHB}",
+					"name": "Tool Proficiency: {@item Thieves' Tools|PHB} +5",
 					"entries": []
 				}
 			],
@@ -462,6 +458,94 @@
 			"languageTags": ["C", "E"],
 			"damageTags": ["S"],
 			"miscTags": ["MW", "AOE"],
+			"conditionInflict": []
+		},
+		{
+			"name": "Jefar Parviz",
+			"level": 2,
+			"source": "BalochPCs",
+			"size": ["M"],
+			"type": "humanoid (half-orc)",
+			"alignment": ["L", "G"],
+			"ac": [
+				{
+					"ac": 15,
+					"from": ["chain mail"]
+				}
+			],
+			"hp": {
+				"formula": "8 per level",
+				"average": 20
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 12,
+			"int": 8,
+			"wis": 13,
+			"cha": 14,
+			"save": {
+				"dex": "+5",
+				"int": "+1"
+			},
+			"skill": {
+				"athletics": "+2",
+				"acrobatics": "+5",
+				"persuasion": "+4",
+				"performance": "+6"
+			},
+			"passive": 13,
+			"languages": ["Common", "Druidic"],
+			"trait": [
+				{ "name": "Proficiency Bonus", "entries": ["{@dice +2}"] },
+				{ "name": "Initiative", "entries": ["{@dice 1d20+3|+3}"] },
+				{ "name": "Initiative", "entries": ["{@dice 1d20+3|+3}"] },
+				{
+					"name": "Tool Expertise: {@item Any 3 Musical Instruments|PHB} +6",
+					"entries": []
+				}
+			],
+			"action": [
+				{
+					"name": "Melee Attack",
+					"entries": [
+						"{@dice 1d20+5|+5} with a {@item dagger|PHB|Dagger}"
+					]
+				},
+				{
+					"name": "Ranged Attack",
+					"entries": [
+						"{@dice 1d20+3|+3} with {@item light crossbow|PHB|Light Crossbow}"
+					]
+				},
+				{
+					"name": "{@classFeature Sneak Attack|Rogue|PHB|1}",
+					"entries": []
+				}
+			],
+			"bonus": [
+				{
+					"name": "{@classFeature Cunning Action|Rogue|PHB|2}",
+					"entries": []
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Bought up in the remote druidic enclave near the village of Layesha, Jefar always felt a little bored. The community of druids, including his 5 polyamorous parental unit, were content to just exist at one with nature.",
+					"Jefar, on the other hand, had a flare for the dramatics. Known at school for his dramatic retelling of stories and musical talent. He would put together creative outfits, sing and perform to the joy of the other students and his teachers.",
+					"At the half-orc maturation age of 15, he decided to depart his village (with the blessing of his parents) and join a performing trope.",
+					"He has since found a troop of drag queens that perform and retell ancient stories, as well as gawdy and occasionally lewd musical numbers, under the name Meshwita Koti. She has a gentle rivalry with her fellow queen Omeeda Loray.",
+					"He has since found a troop of drag queens that perform and retell ancient stories, as well as gawdy and occasionally lewd musical numbers, under the name Meshwita Koti. She has a gentle rivalry with her fellow queen Omeeda Loray.",
+					"Performing in Baloch for the past few weeks, he has now gotten to know a few of the residents of the city and made some friends, though he will soon have to be on the road again..."
+				]
+			},
+			"actionTags": [],
+			"hasFluff": true,
+			"languageTags": ["C", "E"],
+			"damageTags": ["S"],
+			"miscTags": ["MW", "RW"],
 			"conditionInflict": []
 		}
 	]

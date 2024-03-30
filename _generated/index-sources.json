@@ -1,3 +1,4 @@
 {
-	"BalochUCampaign": "creature/IceCoffee426; Player Characters.json"
+	"BalochPCs": "creature/IceCoffee426; Player Characters.json",
+	"ShamayilmChronicles": "adventure/IceCoffee426; Shamayilm Chronicles.json"
 }
