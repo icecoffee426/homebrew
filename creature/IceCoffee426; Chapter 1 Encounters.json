@@ -50,7 +50,7 @@
 				{
 					"name": "Dagger",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft, one target. {@h}4 ({@damage 1d4 +1}) slashing damage."
+						"{@atk mw} {@hit 3} to hit, reach 5 ft, one target. {@h}4 ({@damage 1d4+1}) slashing damage."
 					]
 				}
 			],
@@ -200,6 +200,7 @@
 							"slots": 2
 						}
 					},
+					"footerEntries": ["Spell Save {@dc 12}"],
 					"type": "spellcasting"
 				}
 			],

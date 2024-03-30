@@ -92,8 +92,7 @@
 						}
 					},
 					"footerEntries": [
-						"Spell Save {@dc 13}",
-						"Spell Attack {@dice 1d20+5|+5}"
+						"Spell Save {@dc 13}, Spell Attack {@dice 1d20+5|+5}"
 					]
 				}
 			],
@@ -177,7 +176,9 @@
 							"spells": ["{@spell thunderclap|XGE|Thunderclap}"]
 						}
 					},
-					"footerEntries": ["Spell Save {@dc 12}"]
+					"footerEntries": [
+						"Spell Save {@dc 12}, Spell Attack {@dice 1d20+4|+4}"
+					]
 				}
 			],
 			"action": [
@@ -285,19 +286,20 @@
 							"spells": [
 								"{@spell guidance|PHB|Guidance}",
 								"{@spell spare the dying|PHB|Spare the Dying}",
-								"{@spell word of radiance|PHB|Word of Radiance}"
+								"{@spell word of radiance|XGE|Word of Radiance}"
 							]
 						},
 						"1": {
 							"slots": 3,
 							"spells": [
+								"{@spell thunderwave|PHB|Thunderwave} (Domain)",
+								"{@spell fog cloud|PHB|Fog Cloud} (Domain)",
 								"{@link Cleric Spells|http://dnd5e.wikidot.com/spells:cleric}"
 							]
 						}
 					},
 					"footerEntries": [
-						"Spell Save {@dc 13}",
-						"Spell Attack {@dice 1d20+5|+5}"
+						"Spell Save {@dc 13}, Spell Attack {@dice 1d20+5|+5}"
 					]
 				}
 			],
@@ -427,8 +429,7 @@
 						}
 					},
 					"footerEntries": [
-						"Spell Save {@dc 13}",
-						"Spell Attack {@dice 1d20+5|+5}"
+						"Spell Save {@dc 13}, Spell Attack {@dice 1d20+5|+5}"
 					]
 				}
 			],
@@ -436,7 +437,7 @@
 				{
 					"name": "Melee Attack",
 					"entries": [
-						"{@dice 1d20+3|+3} with a {@item dagger|PHB|Dagger} and +2 fire damage for one hit per turn from {{@subclassFeature Genie's Wrath|Warlock|TCE|Genie|TCE|1|TCE}}"
+						"{@dice 1d20+3|+3} with a {@item dagger|PHB|Dagger} and +2 fire damage for one hit per turn from {@subclassFeature Genie's Wrath|Warlock|TCE|Genie|TCE|1|TCE}"
 					]
 				},
 				{
