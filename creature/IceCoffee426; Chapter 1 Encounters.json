@@ -15,7 +15,7 @@
 	},
 	"monster": [
 		{
-			"name": "Assassin Acolyte",
+			"name": "Mysterious Thug",
 			"source": "BalochCh1Encounters",
 			"basicRules": true,
 			"size": ["M"],
@@ -72,6 +72,15 @@
 								]
 							}
 						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/MM/Assassin.webp"
+						}
 					}
 				]
 			},
