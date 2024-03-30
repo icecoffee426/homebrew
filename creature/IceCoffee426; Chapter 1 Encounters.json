@@ -60,7 +60,6 @@
 			"miscTags": ["MW", "MLW"],
 			"hasFluff": true,
 			"fluff": {
-				"name": "Mysterious Thug",
 				"entries": [
 					{
 						"type": "entries",
