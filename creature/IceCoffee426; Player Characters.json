@@ -1,0 +1,468 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "BalochPCs",
+				"abbreviation": "BPCs",
+				"full": "Baloch Player Characters",
+				"version": "1.0.0",
+				"authors": ["IceCoffee426"],
+				"convertedBy": ["IceCoffee426"]
+			}
+		],
+		"dateAdded": 1711757098,
+		"dateLastModified": 1711757098
+	},
+	"monster": [
+		{
+			"name": "Erza Florian Erinail",
+			"level": 2,
+			"source": "BalochPCs",
+			"size": ["M"],
+			"type": "humanoid (half wood-elf)",
+			"alignment": ["L", "G"],
+			"ac": [
+				{
+					"ac": 11
+				}
+			],
+			"hp": {
+				"formula": "6 per level",
+				"average": 14
+			},
+			"speed": {
+				"walk": 35
+			},
+			"str": 6,
+			"dex": 12,
+			"con": 15,
+			"int": 17,
+			"wis": 14,
+			"cha": 10,
+			"save": {
+				"int": "+5",
+				"wis": "+4"
+			},
+			"skill": {
+				"arcana": "+5",
+				"history": "+5",
+				"investigation": "+5",
+				"stealth": "+3"
+			},
+			"senses": ["darkvision 60 ft."],
+			"passive": 12,
+			"languages": ["Common", "Northern", "Ancient"],
+			"resist": ["psychic"],
+			"trait": [
+				{ "name": "Proficiency Bonus", "entries": ["{@dice +2}"] },
+				{
+					"name": "Initiative",
+					"entries": ["{@dice 1d20+4|+4} (with Temporal Awareness)"]
+				},
+				{
+					"name": "Tool Proficiency: {@item Gaming Set|PHB}",
+					"entries": []
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spells",
+					"type": "spellcasting",
+					"ability": "int",
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell chill touch|PHB|Chill Touch}",
+								"{@spell fire bolt|PHB|Fire Bolt}",
+								"{@spell mage hand|PHB|Mage Hand}",
+								"{@spell Message|PHB|Message}"
+							]
+						},
+						"1": {
+							"slots": 3,
+							"spells": [
+								"{@spell alarm|PHB|Alarm} (Ritual)",
+								"{@spell comprehend languages|PHB|Comprehend Languages} (Ritual)",
+								"{@spell detect magic|PHB|Detect Magic} (Ritual)",
+								"{@spell magic missile|PHB|Magic Missile}",
+								"{@spell magnify gravity|EGW|Magnify Gravity}",
+								"{@spell silvery barbs|SCC|Silvery Barbs}",
+								"{@spell tasha's hideous laughter|PHB|Hideous Laughter}",
+								"{@spell tenser's floating disk|PHB|Tenser's Floating Disk} (Ritual)"
+							]
+						}
+					},
+					"footerEntries": [
+						"Spell Save {@dc 13}",
+						"Spell Attack {@dice 1d20+5|+5}"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "{@classFeature Arcane Recovery|Wizard|PHB|1}",
+					"entries": []
+				},
+				{
+					"name": "Unarmed Melee Attack",
+					"entries": ["{@dice 1d20-2| -2}"]
+				}
+			],
+			"reaction": [
+				{
+					"name": "{@subclassFeature Chronal Shift|Wizard|PHB|Chronurgy|EGW|2}",
+					"entries": []
+				}
+			],
+			"fluff": {
+				"entries": [""]
+			},
+			"actionTags": [],
+			"hasFluff": true,
+			"languageTags": ["C", "E"],
+			"damageTags": ["S"],
+			"miscTags": ["MW", "AOE"],
+			"conditionInflict": []
+		},
+		{
+			"name": "Aramil Naigal",
+			"level": 2,
+			"source": "BalochPCs",
+			"size": ["M"],
+			"type": "humanoid (high-elf)",
+			"alignment": ["C", "N"],
+			"ac": [
+				{
+					"ac": 16,
+					"from": ["chain mail"]
+				}
+			],
+			"hp": {
+				"formula": "8 per level",
+				"average": 20
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 17,
+			"dex": 12,
+			"con": 14,
+			"int": 14,
+			"wis": 10,
+			"cha": 8,
+			"save": {
+				"str": "+5",
+				"con": "+4"
+			},
+			"skill": {
+				"athletics": "+5",
+				"arcana": "+4",
+				"history": "+4",
+				"persuasion": "+1"
+			},
+			"senses": ["darkvision 60 ft."],
+			"passive": 10,
+			"languages": ["Common", "Ancient", "Abyssal"],
+			"resist": ["radiant"],
+			"trait": [
+				{ "name": "Proficiency Bonus", "entries": ["{@dice +2}"] },
+				{ "name": "Initiative", "entries": ["{@dice 1d20+1|+1}"] }
+			],
+			"spellcasting": [
+				{
+					"name": "Spells",
+					"type": "spellcasting",
+					"ability": "int",
+					"spells": {
+						"0": {
+							"spells": ["{@spell thunderclap|XGE|Thunderclap}"]
+						}
+					},
+					"footerEntries": ["Spell Save {@dc 12}"]
+				}
+			],
+			"action": [
+				{
+					"name": "{@classFeature Action Surge|Fighter|PHB|2}",
+					"entries": []
+				},
+				{
+					"name": "Melee Attack",
+					"entries": [
+						"{@dice 1d20+7|+5} (+7 if Dueling in effect) with a {@item longsword|PHB|Longsword}"
+					]
+				},
+				{
+					"name": "Ranged Attack",
+					"entries": [
+						"{@dice 1d20+3|+3} with {@item light crossbow|PHB|Light Crossbow}"
+					]
+				}
+			],
+			"bonus": [
+				{
+					"name": "{@classFeature Second Wind|Fighter|PHB|1}",
+					"entries": []
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Youngest of the prime branch of the Naigal family, Aramil grew up wealthy and spoilt. With little chance of inheriting the large family seats, he was tutored in the ways of a warrior to further the family's secret goals.",
+					"For generations, the Naigal's, in exchange for power and riches, have been doing the bidding of a demon named Rakasha, doing her bidding in the material plane.",
+					"Aramil failed consistently in his studies, despite being intelligent and strong, as he was undisciplined and unmotivated, instead choosing a life of hedonism.",
+					"During a moment of apathy, Aramil inadvertently started a fire in one of the family vaults at which he was training, killing his instructor and destroying many relics in the process.",
+					"His parents, after a stern discussion where Aramil refused to change his ways, shipped him to Baloch to study at the unversity, effectively cutting him off and washing their hands of his poor attitude and lack of interest in the family's values.",
+					"The life of a student (and likely a merchant or mercenary thereafter) is not one that suits Aramil. Willing to do anything to find favour with his family again and return to a lavish lifestlye, he is using his spare time from his studies looking for any artefacts that could serve Rakasha's mysterious goals. Oddly, however, he is for the first time finding enjoyment in his studies and having an element of stucture in his life."
+				]
+			},
+			"actionTags": [],
+			"hasFluff": true,
+			"languageTags": ["C", "E"],
+			"damageTags": ["S"],
+			"miscTags": ["MW", "RW"],
+			"conditionInflict": []
+		},
+		{
+			"name": "Doryan Gravado",
+			"level": 2,
+			"source": "BalochPCs",
+			"size": ["M"],
+			"type": "humanoid (human)",
+			"alignment": ["L", "G"],
+			"ac": [
+				{
+					"ac": 18,
+					"from": ["chain mail and shield"]
+				}
+			],
+			"hp": {
+				"formula": "7 per level",
+				"average": 17
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 14,
+			"dex": 12,
+			"con": 15,
+			"int": 8,
+			"wis": 17,
+			"cha": 10,
+			"save": {
+				"con": "+4",
+				"wis": "+5",
+				"cha": "+2"
+			},
+			"skill": {
+				"medicine": "+5",
+				"religion": "+1",
+				"survival": "+4",
+				"persuasion": "+2"
+			},
+			"senses": ["{@feat resilient|PHB|Resilient} (Constitution"],
+			"passive": 13,
+			"languages": ["Common", "Northern"],
+			"resist": ["thunder"],
+			"trait": [
+				{ "name": "Proficiency Bonus", "entries": ["{@dice +2}"] },
+				{ "name": "Initiative", "entries": ["{@dice 1d20+1|+1}"] },
+				{
+					"name": "{@classFeature Channel Divinity: Turn Undead|Cleric|PHB|2}",
+					"entries": [""]
+				},
+				{
+					"name": "{@subclassFeature Channel Divinity: Destructive Wrath|Cleric|PHB|Tempest|PHB|2|PHB}",
+					"entries": [""]
+				},
+				{
+					"name": "Tool Proficiency: {@item Herbalism Kit|PHB}",
+					"entries": []
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spells",
+					"type": "spellcasting",
+					"ability": "wis",
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell guidance|PHB|Guidance}",
+								"{@spell spare the dying|PHB|Spare the Dying}",
+								"{@spell word of radiance|PHB|Word of Radiance}"
+							]
+						},
+						"1": {
+							"slots": 3,
+							"spells": [
+								"{@link Cleric Spells|http://dnd5e.wikidot.com/spells:cleric}"
+							]
+						}
+					},
+					"footerEntries": [
+						"Spell Save {@dc 13}",
+						"Spell Attack {@dice 1d20+5|+5}"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Melee Attack",
+					"entries": [
+						"{@dice 1d20+2|+2} with a {@item warhammer|PHB|Warhammer}"
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "{@subclassFeature Wrath of the Storm|Cleric|PHB|Tempest|PHB|1|PHB}",
+					"entries": [""]
+				}
+			],
+			"bonus": [
+				{
+					"name": "{@classFeature Second Wind|Fighter|PHB|1}",
+					"entries": []
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Son of the king of the Northern nation of Cerheid, Doryan has had the life of a fairy-tal character (but only the worst bits).",
+					"His father, busy with matters of the kingdoms and battles against neighbouring nations, his step-mother \"raised\" him from the age of 5. She never really cared for him, although she never really outwardly treated him unkindly.",
+					"However, unbeknownst to the king and Doryan, she was secretly looking for any way to get the crown to pass to her own son. When Doryan was 17, discovering himself and more about the world, he fell in love with one of the stable boys at the castle.",
+					"His step-mother discovered this, thanks to many spies and paiges that she had paid off. Revealing this \"sin\" (as the more primitive Northern nations would call it), Doryan was exiled for shaming the family.",
+					"Cast into the wild on his own, he was spoken to in a dream by the goddess Talee. She bestowed him with special abilities so that he could survive in the wilderness. Somehow, he travelled for years and made it to the city of Baloch, where he has now dwelled for some years, serving at one of Talee's biggest temples in the Southern kingdoms."
+				]
+			},
+			"actionTags": [],
+			"hasFluff": true,
+			"languageTags": ["C", "E"],
+			"damageTags": ["S"],
+			"miscTags": ["MW", "AOE"],
+			"conditionInflict": []
+		},
+		{
+			"name": "Aroz Ravazi",
+			"level": 2,
+			"source": "BalochPCs",
+			"size": ["M"],
+			"type": "humanoid (efreeti dragonborn)",
+			"alignment": ["N", "N"],
+			"ac": [
+				{
+					"ac": 14,
+					"from": ["genie's robes"]
+				}
+			],
+			"hp": {
+				"formula": "6 per level",
+				"average": 15
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 13,
+			"int": 8,
+			"wis": 12,
+			"cha": 16,
+			"save": {
+				"wis": "+3",
+				"cha": "+5"
+			},
+			"skill": {
+				"deception": "+5",
+				"persuasion": "+5",
+				"perception": "+3 (if familiar within 100ft)",
+				"sleight of hand": "+5",
+				"stealth": "+5"
+			},
+			"passive": 11,
+			"languages": ["Common"],
+			"resist": ["fire"],
+			"trait": [
+				{ "name": "Proficiency Bonus", "entries": ["{@dice +2}"] },
+				{ "name": "Initiative", "entries": ["{@dice 1d20+3|+3}"] },
+				{
+					"name": "{@optfeature Beguiling Influence|PHB}",
+					"entries": [""]
+				},
+				{
+					"name": "{@optfeature Mask of Many Faces|PHB}",
+					"entries": [""]
+				},
+				{
+					"name": "{@optfeature Pact of the Chain|PHB}",
+					"entries": [
+						"Summons a summer cardinal with {@creature raven|PHB} stats, does fire damage. Vanishes if it dies, you die or you are separated by more than 5 miles."
+					]
+				},
+				{
+					"name": "{@race dragonborn|PHB|Breath Weapon}",
+					"entries": ["{@dice 2d6} fire, 30ft line, save DC 13"]
+				},
+				{
+					"name": "Tool Proficiency: {@item Thieves' Tools|PHB}",
+					"entries": []
+				}
+			],
+			"spellcasting": [
+				{
+					"name": "Spells",
+					"type": "spellcasting",
+					"ability": "cha",
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell eldritch blast|PHB|Eldritch Blast}",
+								"{@spell friends|PHB|Friends}"
+							]
+						},
+						"1": {
+							"slots": 2,
+							"spells": [
+								"{@spell burning hands|PHB|Burning Hands} (Patron)",
+								"{@spell hellish rebuke|PHB|Hellish Rebuke} (Reaction)",
+								"{@spell unseen servant|PHB|Unseen Servant} (Ritual)",
+								"{@spell find familiar|PHB|Find Familiar} (Once per LR)",
+								"{@spell disguise self|PHB|Disguise Self} (Once per LR)"
+							]
+						}
+					},
+					"footerEntries": [
+						"Spell Save {@dc 13}",
+						"Spell Attack {@dice 1d20+5|+5}"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Melee Attack",
+					"entries": [
+						"{@dice 1d20+3|+3} with a {@item dagger|PHB|Dagger} and +2 fire damage for one hit per turn from {{@subclassFeature Genie's Wrath|Warlock|TCE|Genie|TCE|1|TCE}}"
+					]
+				},
+				{
+					"name": "{{@subclassFeature Bottled Respite|Warlock|TCE|Genie|TCE|1|TCE}}",
+					"entries": []
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Aroz is native to the city of Baloch and grew up in one of the city's slums (dragonborn not born into nobility are often stuck in a cycle of poverty).",
+					"Forced to survive on very little, they are a nimble and dextrous individual, and they got by on charming and swindling the wealthy. With some friends in the criminal underworld of the city, they know shortcuts and secret passageways in many places throughout the city and are able to find new ones in new places easily.",
+					"By happenstance, Aroz swiped an agate ring from a noble whose interest they had piqued. The ring held an imprisoned efreeti djinn named Arafat, whom Aroz was able to free.",
+					"Grateful for the freedom, and feeling kinship towards Aroz as an efreeti dragonborn, Arafat granted Aroz powerful abilities, a result of which they were able to talk themselves into a position at the university to escape their position.",
+					"Aroz now studies at the university, doing little studying (yet somehow still passing), partying, socialising and gallivanting for the most part!"
+				]
+			},
+			"actionTags": [],
+			"hasFluff": true,
+			"languageTags": ["C", "E"],
+			"damageTags": ["S"],
+			"miscTags": ["MW", "AOE"],
+			"conditionInflict": []
+		}
+	]
+}
