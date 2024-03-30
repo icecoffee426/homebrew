@@ -1,0 +1,244 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "BalochCh1Encounters",
+				"abbreviation": "CH1E",
+				"full": "Baloch Chapter 1 Encounters",
+				"version": "1.0.0",
+				"authors": ["IceCoffee426"],
+				"convertedBy": ["IceCoffee426"]
+			}
+		],
+		"dateAdded": 1711757098,
+		"dateLastModified": 1711757098
+	},
+	"monster": [
+		{
+			"name": "Assassin Acolyte",
+			"source": "AssassinTrickster",
+			"basicRules": true,
+			"size": ["M"],
+			"type": {
+				"type": "humanoid",
+				"tags": ["Human"]
+			},
+			"alignment": ["NX", "C", "G", "NY", "E"],
+			"ac": [
+				{
+					"ac": 12,
+					"from": ["{@item leather armor|phb}"]
+				}
+			],
+			"hp": {
+				"formula": "2d8 + 2",
+				"average": 11
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 12,
+			"con": 12,
+			"int": 10,
+			"wis": 10,
+			"cha": 10,
+			"passive": 10,
+			"languages": ["Common", "Cant"],
+			"cr": "1/2",
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 1}) slashing damage."
+					]
+				}
+			],
+			"environment": ["urban"],
+			"attachedItems": ["dagger|phb"],
+			"languageTags": ["C"],
+			"miscTags": ["MW", "MLW"],
+			"hasFluff": true,
+			"fluff": {
+				"name": "Bandit",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Bandits rove in gangs and are sometimes led by thugs, veterans, or spellcasters. Not all bandits are evil. Oppression, drought, disease, or famine can often drive otherwise honest folk to a life of banditry.",
+									"Pirates are bandits of the high seas. They might be freebooters interested only in treasure and murder, or they might be privateers sanctioned by the crown to attack and plunder an enemy nation's vessels."
+								]
+							}
+						]
+					}
+				]
+			},
+			"token": {
+				"name": "Assassin",
+				"source": "MM"
+			},
+			"skill": {
+				"stealth": "+3",
+				"acrobatics": "+3"
+			},
+			"trait": [
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"The assassin deals an extra {@dice 1d4} damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that isn't incapacitated and the assassin doesn't have disadvantage on the attack roll."
+					]
+				}
+			],
+			"traitTags": ["Sneak Attack"],
+			"damageTags": ["S"]
+		},
+		{
+			"name": "Assassin Trickster",
+			"source": "AssassinTrickster",
+			"size": ["M"],
+			"type": {
+				"type": "humanoid",
+				"tags": ["Human"]
+			},
+			"alignment": ["L", "NX", "C", "NY", "E"],
+			"ac": [
+				{
+					"ac": 14,
+					"from": [
+						"{@item studded leather armor|phb|studded leather}"
+					]
+				}
+			],
+			"hp": {
+				"formula": "6d8 + 12",
+				"average": 39
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 11,
+			"dex": 14,
+			"con": 13,
+			"int": 14,
+			"wis": 11,
+			"cha": 10,
+			"save": {
+				"dex": "+4",
+				"int": "+4"
+			},
+			"skill": {
+				"acrobatics": "+4",
+				"deception": "+2",
+				"perception": "+2",
+				"stealth": "+6"
+			},
+			"passive": 12,
+			"resist": ["poison"],
+			"languages": ["Common", "Northern", "Cant"],
+			"cr": "4",
+			"trait": [
+				{
+					"name": "Assassinate",
+					"entries": [
+						"During its first turn, the assassin has advantage on attack rolls against any creature that hasn't taken a turn. Any hit the assassin scores against a {@quickref Surprise|PHB|3|0|surprised} creature is a critical hit."
+					]
+				},
+				{
+					"name": "Sneak Attack (1/Turn)",
+					"entries": [
+						"The assassin deals an extra {@dice 2d6} damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the assassin that isn't {@condition incapacitated} and the assassin doesn't have disadvantage on the attack roll."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 2}) piercing damage."
+					]
+				},
+				{
+					"name": "Light Crossbow",
+					"entries": [
+						"{@atk rw} {@hit 6} to hit, range 80/320 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+					]
+				}
+			],
+			"environment": ["urban"],
+			"attachedItems": ["dagger|phb", "light crossbow|phb"],
+			"traitTags": ["Sneak Attack"],
+			"actionTags": ["Multiattack"],
+			"languageTags": ["C"],
+			"miscTags": ["MW", "MLW", "RW"],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Assassin",
+				"source": "MM"
+			},
+			"fluff": {
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"The mysterious assassin trickster who was sent to cause havoc at the Baloch University performance bar. Clearly from the Northern kingdoms, although it is unknown what his motivations were or who hired him."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://5e.tools/img/bestiary/MM/Assassin.webp"
+						}
+					}
+				]
+			},
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"spells": {
+						"0": {
+							"spells": ["{@spell mage hand|PHB|Mage Hand}"]
+						},
+						"1": {
+							"spells": [
+								"{@spell tasha's hideous laughter|PHB|Hideous Laughter}",
+								"{@spell silvery barbs|SCC|Silvery Barbs}"
+							],
+							"slots": 3
+						}
+					},
+					"type": "spellcasting"
+				}
+			],
+			"spellcastingTags": ["O"],
+			"bonus": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4}) piercing damage."
+					]
+				}
+			],
+			"reaction": [
+				{
+					"name": "{@spell silvery barbs|SCC|Silvery Barbs}",
+					"entries": ["Costs a level 1 spell slot."]
+				}
+			],
+			"damageTags": ["P"],
+			"savingThrowForcedSpell": ["wisdom"]
+		}
+	]
+}

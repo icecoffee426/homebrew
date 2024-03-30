@@ -1,4 +1,5 @@
 {
 	"BalochPCs": "creature/IceCoffee426; Player Characters.json",
-	"ShamayilmChronicles": "adventure/IceCoffee426; Shamayilm Chronicles.json"
+	"ShamayilmChronicles": "adventure/IceCoffee426; Shamayilm Chronicles.json",
+	"BalochCh1Encounters": "creature/IceCoffee426; Chapter 1 Encounters.json"
 }
