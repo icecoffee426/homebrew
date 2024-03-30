@@ -470,8 +470,8 @@
 			"alignment": ["L", "G"],
 			"ac": [
 				{
-					"ac": 15,
-					"from": ["chain mail"]
+					"ac": 14,
+					"from": ["leather armor"]
 				}
 			],
 			"hp": {
