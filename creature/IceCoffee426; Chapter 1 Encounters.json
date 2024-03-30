@@ -16,12 +16,12 @@
 	"monster": [
 		{
 			"name": "Assassin Acolyte",
-			"source": "AssassinTrickster",
+			"source": "BalochCh1Encounters",
 			"basicRules": true,
 			"size": ["M"],
 			"type": {
 				"type": "humanoid",
-				"tags": ["Human"]
+				"tags": ["Human, Dwarf"]
 			},
 			"alignment": ["NX", "C", "G", "NY", "E"],
 			"ac": [
@@ -50,7 +50,7 @@
 				{
 					"name": "Dagger",
 					"entries": [
-						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 1}) slashing damage."
+						"{@atk mw} {@hit 3} to hit, reach 5 ft, one target. {@h}4 ({@damage 1d4 +1}) slashing damage."
 					]
 				}
 			],
@@ -60,8 +60,7 @@
 			"miscTags": ["MW", "MLW"],
 			"hasFluff": true,
 			"fluff": {
-				"name": "Bandit",
-				"source": "MM",
+				"name": "Assassin Acolyte",
 				"entries": [
 					{
 						"type": "entries",
@@ -69,17 +68,12 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Bandits rove in gangs and are sometimes led by thugs, veterans, or spellcasters. Not all bandits are evil. Oppression, drought, disease, or famine can often drive otherwise honest folk to a life of banditry.",
-									"Pirates are bandits of the high seas. They might be freebooters interested only in treasure and murder, or they might be privateers sanctioned by the crown to attack and plunder an enemy nation's vessels."
+									"These amaeteur assassins were sent to terrorise the Baloch university campus, motivations and hirers unknown. Oppression, drought, disease, or famine can often drive otherwise honest folk to a life of they otherwise would not have chosen..."
 								]
 							}
 						]
 					}
 				]
-			},
-			"token": {
-				"name": "Assassin",
-				"source": "MM"
 			},
 			"skill": {
 				"stealth": "+3",
@@ -98,7 +92,7 @@
 		},
 		{
 			"name": "Assassin Trickster",
-			"source": "AssassinTrickster",
+			"source": "BalochCh1Encounters",
 			"size": ["M"],
 			"type": {
 				"type": "humanoid",
@@ -158,17 +152,16 @@
 				{
 					"name": "Dagger",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4 + 2}) piercing damage."
+						"{@atk mw} {@hit 4} to hit, reach 5 ft, one target. {@damage 1d4+2} piercing damage."
 					]
 				},
 				{
-					"name": "Light Crossbow",
+					"name": "Hand Crossbow",
 					"entries": [
-						"{@atk rw} {@hit 6} to hit, range 80/320 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+						"{@atk rw} {@hit 6} to hit, range 80 ft, one target. {@damage 1d4+3} piercing damage."
 					]
 				}
 			],
-			"environment": ["urban"],
 			"attachedItems": ["dagger|phb", "light crossbow|phb"],
 			"traitTags": ["Sneak Attack"],
 			"actionTags": ["Multiattack"],
@@ -176,10 +169,6 @@
 			"miscTags": ["MW", "MLW", "RW"],
 			"hasFluff": true,
 			"hasFluffImages": true,
-			"token": {
-				"name": "Assassin",
-				"source": "MM"
-			},
 			"fluff": {
 				"entries": [
 					{
@@ -227,7 +216,7 @@
 				{
 					"name": "Dagger",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d4}) piercing damage."
+						"{@atk mw} {@hit 4} to hit, reach 5 ft, one target. {@h}6 ({@damage 1d4}) piercing damage."
 					]
 				}
 			],
