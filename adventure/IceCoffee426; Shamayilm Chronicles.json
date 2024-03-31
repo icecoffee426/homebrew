@@ -34,17 +34,81 @@
 					"type": "section",
 					"name": "Introduction",
 					"entries": [
-						"The town of Ravenshead has fallen to dark forces. During the last new moon, demons poured forth from the cathedral's crypts and slaughtered the townsfolk. Now, the few surviving villagers have fled to a nearby town in search of help. Fearing that the demonic invasion might flow out into nearby settlements, the local constabulary have offered a reward to whoever can close the portal allowing them into our world.",
-						"Unbeknownst to most, a portal was opened by the local clergy when they read from a forbidden book found deep beneath the cathedral. This has allowed a Pit Lord to take up residence in the crypts and summon forth more demonic henchmen. Unless he is slain, the forces of Hell will continue to pour forth and invade the material plane.",
+						"The great library of Shamayilm at the magical University of Baloch has been broken into and some obscure books have gone missing. At the beginning of the summer break, thugs and assassins caused commotion in the campus and some surrounding areas. Master Sage Parma needs to send an adventuring party to retrieve the lost pages. Her biggest fear is what the instigator of the theft might want to do with the stolen pages, the knowledge being incredibly old arcana that may possibly be associated with demonic forces.",
+						"Unbeknownst to most, the powerful and mysterious individual who now has possession of the pages, wants to open an extra-dimensional portal to allow a being known as the Queen of Darkness to come into the world and affect individuals therein. Unless he is stopped, the history and peoples of the world as it is known will be in danger of being erased forever."
+					]
+				},
+				{
+					"type": "entries",
+					"name": "The World of Zoharna",
+					"entries": [
+						"The world of Zoharna consists of individuals of various races from various planes who migrated or were transported to this plane tens of thousands of years ago. The migrant individuals (often arriving in different locations and at different times) found remnants of cities and civilisations that had seemingly long since been destroyed. Repurposing these ruins, a new and thriving world has been build, but like any world, there is a chequered history with many rivalries.",
+						"The geography of the planet is simple in theory. The Southern Empire and its nations are in the south-east , whilst the various, disparate Nations of the North lie towards the northeast. In practice however, there are many hostile lands in between nations, where most people fear to tread. The planet has been in a state of relative peace for two centuries, despite the many cultural differences between the North and South.",
 						{
 							"type": "entries",
-							"name": "Adventure Hooks",
+							"name": "The Southern Empire",
 							"entries": [
-								"Wrath of the Demon Lord is an adventure for four 8th level adventurers. With good play, they can advance to 9th level. The adventure can take place in any town set in a civilized area. Choose one of the hooks below or make up your own.",
-								"{@b {@i A Dark Artifact.}} The characters heard of a book of great power buried beneath a nearby cathedral. They went in search of it only to find that the town has been overrun by demons.",
-								"{@b {@i A Pious Purpose.}} The characters heard of the demonic incursion in a nearby town and set out to seal whatever portal they're coming through.",
-								"{@b {@i A Righteous Reward.}} The characters have been offered 2,400 gp in exchange for defeating the source of the demonic invasion and bringing peace to the town."
+								"Established 1000 years ago, the Southern Empire is the largest power on the planet. There are many nations and cities within the continent. Notable nations include Balcha to the south and Kakura to the east. The primary languages of these nations are also the two most common languages of the Empire: the Common Tongue (Zuban) and the Second Tongue (Dusuri).",
+								"Life in the Southern Empire is generally prosperous but as with any civilisation, inequalities are almost inevitable. Particularly between those living in the country and those in the cities. There is also a sense of superiority in Southern folk that the Northern Nations are less sophisticated (to put it mildly)."
 							]
+						},
+						{
+							"type": "entries",
+							"name": "The Northern Nations",
+							"entries": [
+								"Unlike the Southern Empire, the Northern Nations do not live under a unified banner and ruler. Tribalism, traditionalism and religious feuds permeate the nations, with many wars and battles waged in the past in the names of various gods and causes.",
+								"At present there is peace between the Northern Nations and the Southern Empire, but the nations among themselves have ever-lasting rivalries fought out in smaller battles. Little else is known about life in the Northern Nations but more may be gleaned from former residents who have moved to Southern Imperial cities in search of a different life."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Magic, Gods and Other Lore",
+					"entries": [
+						"The world of Zoharna consists of individuals of various races from various planes who migrated or were transported to this plane tens of thousands of years ago. The migrant individuals (often arriving in different locations and at different times) found remnants of cities and civilisations that had seemingly long since been destroyed. Repurposing these ruins, a new and thriving world has been build, but like any world, there is a chequered history with many rivalries.",
+						"The geography of the planet is simple in theory. The Southern Empire and its nations are in the south-east , whilst the various, disparate Nations of the North lie towards the northeast. In practice however, there are many hostile lands in between nations, where most people fear to tread. The planet has been in a state of relative peace for two centuries, despite the many cultural differences between the North and South.",
+						{
+							"type": "entries",
+							"name": "Magic",
+							"entries": [
+								"Magic is relatively common in the world, although many individuals forego its study, or are simply incapable of performing more than small tricks. The source of all magic is known as The Weave (the way in which magic presents itself to beings for their use) and it flows throughout the world, touching almost every corner of existence.",
+								"The Weave is a subject of study in many universities - some theorise its power comes from god(s) and others that it is simply a fact of existence. Regardless, many deities can grant additional magic to their followers, as can powerful extraplanar creatures (though such pacts would may often be looked upon as suspicious)."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "Gods",
+							"entries": [
+								"A huge number of deities are revered, worshiped, and feared throughout the lands of Zaharna. Although the gods do not manifest in matters of the world, clerics can be granted divine power, those with more nefarious motives may perform dark deeeds in the names of their gods, and shining paladins can stand like beacons against the darkness. It is difficult to be ambivalent about the deities and deny their existence in such a world.",
+								"Many people have a favorite among the gods, one whose ideals and teachings they make their own. And a few people dedicate themselves entirely to a single god, usually serving as a priest or champion of that god’s ideals. You can learn more about gods in the world by speaking to individuals or visiting temples/shrines to a particular god."
+							]
+						}
+					]
+				},
+				{
+					"type": "entries",
+					"name": "Notable Locations",
+					"entries": [
+						"The world of Zoharna consists of individuals of various races from various planes who migrated or were transported to this plane tens of thousands of years ago. The migrant individuals (often arriving in different locations and at different times) found remnants of cities and civilisations that had seemingly long since been destroyed. Repurposing these ruins, a new and thriving world has been build, but like any world, there is a chequered history with many rivalries.",
+						"The geography of the planet is simple in theory. The Southern Empire and its nations are in the south-east , whilst the various, disparate Nations of the North lie towards the northeast. In practice however, there are many hostile lands in between nations, where most people fear to tread. The planet has been in a state of relative peace for two centuries, despite the many cultural differences between the North and South.",
+						{
+							"type": "entries",
+							"name": "The City of Baloch",
+							"entries": [
+								"The city of Baloch, where our story starts, is located in the western region of Balcha. Though not the financial and judicial capital, it serves as a center for culture and academia and is flocked too by those wishing to live a high flying lifestyle.",
+								"The most impressive buildings are in the innter city, and within that in the Sajila district is Baloch Mahar University. The innter city is home to many theaters, gardens, taverns and dining experiences, whilst the outer city has more residential areas. Beyond the city and leading up to it are many roads, however venturing too far out may lead you to one of the many uncharted wildernesseses of the planet."
+							]
+						},
+						{
+							"type": "entries",
+							"name": "The Baloch Mahar University of Magical and Physical Studies",
+							"entries": ["..."]
+						},
+						{
+							"type": "entries",
+							"name": "The Shamayilm Library",
+							"entries": ["..."]
 						}
 					]
 				}
