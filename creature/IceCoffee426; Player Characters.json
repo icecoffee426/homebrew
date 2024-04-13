@@ -453,7 +453,7 @@
 				{
 					"name": "Melee Attack",
 					"entries": [
-						"{@dice 1d20+3|+3} with a {@item dagger|PHB} and +2 fire damage for one hit per turn from {@subclassFeature Genie's Wrath|Warlock|TCE|Genie|TCE|1|TCE}"
+						"{@dice 1d20+3|+3} with a {@item dagger|PHB} {@dice 1d4+3} damage and +2 fire damage for one hit per turn from {@subclassFeature Genie's Wrath|Warlock|TCE|Genie|TCE|1|TCE}"
 					]
 				},
 				{
@@ -540,7 +540,7 @@
 				{
 					"name": "Melee Attack",
 					"entries": [
-						"{@dice 1d20+5|+5} with a {@item dagger|PHB|} {@dice 1d4+3|+3} damage"
+						"{@dice 1d20+5|+5} with a {@item dagger|PHB} {@dice 1d4+3} damage"
 					]
 				},
 				{
