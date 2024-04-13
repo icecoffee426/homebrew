@@ -19,7 +19,7 @@
 			"level": 2,
 			"source": "BalochPCs",
 			"size": ["M"],
-			"type": "humanoid (half wood-elf)",
+			"type": "Humanoid (Half Wood-Elf)",
 			"alignment": ["L", "G"],
 			"ac": [
 				{
@@ -33,12 +33,12 @@
 			"speed": {
 				"walk": 35
 			},
-			"str": 6,
+			"str": 10,
 			"dex": 12,
 			"con": 15,
 			"int": 17,
 			"wis": 14,
-			"cha": 10,
+			"cha": 6,
 			"save": {
 				"int": "+5",
 				"wis": "+4"
@@ -49,18 +49,19 @@
 				"investigation": "+5",
 				"stealth": "+3"
 			},
-			"senses": ["darkvision 60 ft."],
-			"passive": 12,
+			"senses": ["Darkvision 60 ft."],
 			"languages": ["Common", "Northern", "Ancient"],
 			"trait": [
 				{ "name": "Proficiency Bonus", "entries": ["{@dice +2}"] },
 				{
 					"name": "Initiative",
-					"entries": ["{@dice 1d20+4|+4} (with Temporal Awareness)"]
+					"entries": [
+						"{@dice 1d20+4|+4} (with {@subclassFeature Temporal Awareness|Wizard|PHB|Chronurgy|EGW|2})"
+					]
 				},
 				{
-					"name": "Tool Proficiency: {@item Gaming Set|PHB} +5",
-					"entries": []
+					"name": "Tool Proficiency:",
+					"entries": ["{@item Gaming Set|PHB} {@dice 1d20+5|+5}"]
 				}
 			],
 			"spellcasting": [
@@ -71,23 +72,22 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell chill touch|PHB|Chill Touch}",
-								"{@spell fire bolt|PHB|Fire Bolt}",
-								"{@spell mage hand|PHB|Mage Hand}",
-								"{@spell Message|PHB|Message}"
+								"{@spell Sapping Sting|EGW}",
+								"{@spell Mending|PHB}",
+								"{@spell Frostbite|PHB}"
 							]
 						},
 						"1": {
 							"slots": 3,
 							"spells": [
-								"{@spell alarm|PHB|Alarm} (Ritual)",
-								"{@spell comprehend languages|PHB|Comprehend Languages} (Ritual)",
-								"{@spell detect magic|PHB|Detect Magic} (Ritual)",
-								"{@spell magic missile|PHB|Magic Missile}",
-								"{@spell magnify gravity|EGW|Magnify Gravity}",
-								"{@spell silvery barbs|SCC|Silvery Barbs}",
-								"{@spell tasha's hideous laughter|PHB|Hideous Laughter}",
-								"{@spell tenser's floating disk|PHB|Tenser's Floating Disk} (Ritual)"
+								"{@spell Comprehend Languages|PHB} (Ritual)",
+								"{@spell Detect Magic|PHB} (Ritual)",
+								"{@spell Tenser's Floating Disk|PHB} (Ritual)",
+								"{@spell Ice Knife|PHB}",
+								"{@spell Magnify Gravity|EGW}",
+								"{@spell Magic Missile|PHB}",
+								"{@spell Shield|PHB}",
+								"{@spell Ray of Sickness|PHB}"
 							]
 						}
 					},
@@ -103,7 +103,7 @@
 				},
 				{
 					"name": "Unarmed Melee Attack",
-					"entries": ["{@dice 1d20-2| -2}"]
+					"entries": ["{@dice 1d20| +0}"]
 				}
 			],
 			"reaction": [
@@ -113,7 +113,10 @@
 				}
 			],
 			"fluff": {
-				"entries": [""]
+				"entries": [
+					"Erza has had a difficult past. Her family, historically with many wizards who studied magic that was forbidden in the kingdom of Ryderia, are now just moderate merchants with one large estate. Though not exactly the apple of her parents' eye, her Nana always encouraged her to be herself and to pursue her own interests, despite her feeling like an outsider among her peers.",
+					"Eventually, she studied magic hard enough to be able to gain entry to the Baloch University in the south. Her Nana paid for the travel and deposit so Erza could study in the South, unimpeded by the archaic laws in the North. Over many years, and overcoming some prejudice, she has risen to the position of Head Librarian of the Shamayilm library at the university."
+				]
 			},
 			"actionTags": [],
 			"hasFluff": true,
@@ -127,12 +130,12 @@
 			"level": 2,
 			"source": "BalochPCs",
 			"size": ["M"],
-			"type": "humanoid (high-elf)",
+			"type": "Humanoid (High-Elf)",
 			"alignment": ["C", "N"],
 			"ac": [
 				{
 					"ac": 16,
-					"from": ["chain mail"]
+					"from": ["{@item Chain Mail|PHB}"]
 				}
 			],
 			"hp": {
@@ -158,13 +161,18 @@
 				"history": "+4",
 				"perception": "+2"
 			},
-			"senses": ["darkvision 60 ft."],
-			"passive": 10,
+			"senses": ["Darkvision 60 ft."],
 			"languages": ["Common", "Ancient", "Abyssal"],
 			"resist": ["radiant"],
 			"trait": [
 				{ "name": "Proficiency Bonus", "entries": ["{@dice +2}"] },
-				{ "name": "Initiative", "entries": ["{@dice 1d20+1|+1}"] }
+				{ "name": "Initiative", "entries": ["{@dice 1d20+1|+1}"] },
+				{
+					"name": "Tool Proficiency:",
+					"entries": [
+						"{@item Navigator's Tools|PHB} {@dice 1d20+4|+4}"
+					]
+				}
 			],
 			"spellcasting": [
 				{
@@ -189,13 +197,13 @@
 				{
 					"name": "Melee Attack",
 					"entries": [
-						"{@dice 1d20+7|+5} (+7 if Dueling in effect) with a {@item longsword|PHB|Longsword}"
+						"{@dice 1d20+7|+5} with a {@item Longsword|PHB} {@dice 1d10+5} damage(extra +2 from {@optfeature Dueling|PHB})"
 					]
 				},
 				{
 					"name": "Ranged Attack",
 					"entries": [
-						"{@dice 1d20+3|+3} with {@item light crossbow|PHB|Light Crossbow}"
+						"{@dice 1d20+3|+3} with {@item light crossbow|PHB|Light Crossbow} {@dice 1d8+1|+1} damage"
 					]
 				}
 			],
@@ -227,12 +235,12 @@
 			"level": 2,
 			"source": "BalochPCs",
 			"size": ["M"],
-			"type": "humanoid (human)",
+			"type": "Humanoid (Human)",
 			"alignment": ["L", "G"],
 			"ac": [
 				{
 					"ac": 18,
-					"from": ["chain mail and shield"]
+					"from": ["{@item Chain Mail|PHB} and {@item Shield|PHB}"]
 				}
 			],
 			"hp": {
@@ -264,16 +272,12 @@
 				{ "name": "Proficiency Bonus", "entries": ["{@dice +2}"] },
 				{ "name": "Initiative", "entries": ["{@dice 1d20+1|+1}"] },
 				{
-					"name": "{@classFeature Channel Divinity: Turn Undead|Cleric|PHB|2}",
-					"entries": [""]
-				},
-				{
-					"name": "{@subclassFeature Channel Divinity: Destructive Wrath|Cleric|PHB|Tempest|PHB|2|PHB}",
-					"entries": [""]
-				},
-				{
-					"name": "Tool Proficiency: {@item Herbalism Kit|PHB} +5",
+					"name": "{@subclassFeature Channel Divinity|Cleric|PHB|Tempest|PHB|2|PHB}",
 					"entries": []
+				},
+				{
+					"name": "Tool Proficiency:",
+					"entries": ["{@item Herbalism Kit|PHB} {@dice 1d20+5|+5}"]
 				}
 			],
 			"spellcasting": [
@@ -284,16 +288,16 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell guidance|PHB|Guidance}",
-								"{@spell spare the dying|PHB|Spare the Dying}",
-								"{@spell word of radiance|XGE|Word of Radiance}"
+								"{@spell Guidance|PHB|Guidance}",
+								"{@spell Spare the Dying|PHB}",
+								"{@spell Word of Radiance|XGE}"
 							]
 						},
 						"1": {
 							"slots": 3,
 							"spells": [
-								"{@spell thunderwave|PHB|Thunderwave} (Domain)",
-								"{@spell fog cloud|PHB|Fog Cloud} (Domain)",
+								"{@spell Thunderwave|PHB} (Domain)",
+								"{@spell Fog Cloud|PHB} (Domain)",
 								"{@link Cleric Spells|http://dnd5e.wikidot.com/spells:cleric}"
 							]
 						}
@@ -307,20 +311,28 @@
 				{
 					"name": "Melee Attack",
 					"entries": [
-						"{@dice 1d20+2|+2} with a {@item warhammer|PHB|Warhammer}"
+						"{@dice 1d20+4|+4} with a {@item warhammer|PHB|Warhammer} {@dice 1d8+2} damage"
 					]
+				},
+				{
+					"name": "{@classFeature Channel Divinity: Turn Undead|Cleric|PHB|2}",
+					"entries": []
+				},
+				{
+					"name": "{@subclassFeature Channel Divinity: Destructive Wrath|Cleric|PHB|Tempest|PHB|2|PHB}",
+					"entries": []
 				}
 			],
 			"reaction": [
 				{
 					"name": "{@subclassFeature Wrath of the Storm|Cleric|PHB|Tempest|PHB|1|PHB}",
-					"entries": [""]
+					"entries": []
 				}
 			],
 			"bonus": [
 				{
-					"name": "{@classFeature Second Wind|Fighter|PHB|1}",
-					"entries": []
+					"name": "{@spell Sanctuary|PHB}",
+					"entries": ["(spell must be prepared)"]
 				}
 			],
 			"fluff": {
@@ -344,12 +356,12 @@
 			"level": 2,
 			"source": "BalochPCs",
 			"size": ["M"],
-			"type": "humanoid (efreeti dragonborn)",
+			"type": "Humanoid (Efreeti Dragonborn)",
 			"alignment": ["N", "N"],
 			"ac": [
 				{
 					"ac": 14,
-					"from": ["genie's robes"]
+					"from": ["Genie's Robes"]
 				}
 			],
 			"hp": {
@@ -383,26 +395,30 @@
 				{ "name": "Proficiency Bonus", "entries": ["{@dice +2}"] },
 				{ "name": "Initiative", "entries": ["{@dice 1d20+3|+3}"] },
 				{
-					"name": "{@optfeature Beguiling Influence|PHB}",
-					"entries": [""]
-				},
-				{
-					"name": "{@optfeature Mask of Many Faces|PHB}",
-					"entries": [""]
-				},
-				{
-					"name": "{@optfeature Pact of the Chain|PHB}",
+					"name": "Invocations",
 					"entries": [
-						"Summons a summer cardinal with {@creature raven|PHB} stats, does fire damage. Vanishes if it dies, you die or you are separated by more than 5 miles."
+						{
+							"type": "optfeature",
+							"name": "{@optfeature Agonising Blast|PHB}",
+							"entries": []
+						},
+						{
+							"type": "optfeature",
+							"name": "{@optfeature Mask of Many Faces|PHB}",
+							"entries": []
+						},
+						{
+							"type": "optfeature",
+							"name": "{@optfeature Pact of the Chain|PHB}",
+							"entries": [
+								"Summons a summer cardinal with {@creature raven|PHB} stats, does fire damage. Vanishes if it dies, you die or you are separated by more than 5 miles."
+							]
+						}
 					]
 				},
 				{
-					"name": "{@race dragonborn|PHB|Breath Weapon}",
-					"entries": ["{@dice 2d6} fire, 30ft line, save DC 13"]
-				},
-				{
-					"name": "Tool Proficiency: {@item Thieves' Tools|PHB} +5",
-					"entries": []
+					"name": "Tool Proficiency:",
+					"entries": ["{@item Thieves' Tools|PHB} {@dice 1d20+5|+5}"]
 				}
 			],
 			"spellcasting": [
@@ -420,11 +436,11 @@
 						"1": {
 							"slots": 2,
 							"spells": [
-								"{@spell burning hands|PHB|Burning Hands} (Patron)",
-								"{@spell hellish rebuke|PHB|Hellish Rebuke} (Reaction)",
-								"{@spell unseen servant|PHB|Unseen Servant} (Ritual)",
-								"{@spell find familiar|PHB|Find Familiar} (Once per LR)",
-								"{@spell disguise self|PHB|Disguise Self} (Once per LR)"
+								"{@spell Burning Hands|PHB} (Patron)",
+								"{@spell Hellish Rebuke|PHB} (Reaction)",
+								"{@spell Hex|PHB} (Bonus Action)",
+								"{@spell Find Familiar|PHB} (Ritual)",
+								"{@spell Disguise Self|PHB} (Once per LR)"
 							]
 						}
 					},
@@ -437,11 +453,21 @@
 				{
 					"name": "Melee Attack",
 					"entries": [
-						"{@dice 1d20+3|+3} with a {@item dagger|PHB|Dagger} and +2 fire damage for one hit per turn from {@subclassFeature Genie's Wrath|Warlock|TCE|Genie|TCE|1|TCE}"
+						"{@dice 1d20+3|+3} with a {@item dagger|PHB} and +2 fire damage for one hit per turn from {@subclassFeature Genie's Wrath|Warlock|TCE|Genie|TCE|1|TCE}"
 					]
 				},
 				{
-					"name": "{{@subclassFeature Bottled Respite|Warlock|TCE|Genie|TCE|1|TCE}}",
+					"name": "{@race dragonborn|PHB|Breath Weapon}",
+					"entries": ["{@dice 2d6} fire, 30ft line, save DC 13"]
+				},
+				{
+					"name": "{@subclassFeature Bottled Respite|Warlock|TCE|Genie|TCE|1|TCE}",
+					"entries": []
+				}
+			],
+			"bonus": [
+				{
+					"name": "{@spell Hex|PHB}",
 					"entries": []
 				}
 			],
@@ -493,9 +519,9 @@
 			},
 			"skill": {
 				"athletics": "+2",
-				"acrobatics": "+5",
+				"acrobatics": "+7 (Expertise)",
 				"persuasion": "+4",
-				"performance": "+6"
+				"performance": "+6 (Expertise)"
 			},
 			"passive": 13,
 			"languages": ["Common", "Druidic"],
@@ -504,26 +530,28 @@
 				{ "name": "Initiative", "entries": ["{@dice 1d20+3|+3}"] },
 				{ "name": "Initiative", "entries": ["{@dice 1d20+3|+3}"] },
 				{
-					"name": "Tool Expertise: {@item Any 3 Musical Instruments|PHB} +6",
-					"entries": []
+					"name": "Tool Expertise:",
+					"entries": [
+						"Any 3 {@item Musical Instruments|PHB|Musical Instrument} {@dice 1d20+5|+}"
+					]
 				}
 			],
 			"action": [
 				{
 					"name": "Melee Attack",
 					"entries": [
-						"{@dice 1d20+5|+5} with a {@item dagger|PHB|Dagger}"
+						"{@dice 1d20+5|+5} with a {@item dagger|PHB|} {@dice 1d4+3|+3} damage"
 					]
 				},
 				{
 					"name": "Ranged Attack",
 					"entries": [
-						"{@dice 1d20+3|+3} with {@item light crossbow|PHB|Light Crossbow}"
+						"{@dice 1d20+3|+3} with {@item light crossbow|PHB}"
 					]
 				},
 				{
 					"name": "{@classFeature Sneak Attack|Rogue|PHB|1}",
-					"entries": []
+					"entries": ["+{@dice 1d6} damage (conditional)"]
 				}
 			],
 			"bonus": [
