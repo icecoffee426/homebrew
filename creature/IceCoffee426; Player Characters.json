@@ -99,7 +99,7 @@
 			"action": [
 				{
 					"name": "{@classFeature Arcane Recovery|Wizard|PHB|1}",
-					"entries": []
+					"entries": ["Recover spell slots on short rest."]
 				},
 				{
 					"name": "Unarmed Melee Attack",
@@ -311,7 +311,7 @@
 				{
 					"name": "Melee Attack",
 					"entries": [
-						"{@dice 1d20+4|+4} with a {@item warhammer|PHB|Warhammer} {@dice 1d8+2} damage"
+						"{@dice 1d20+4|+4} with a {@item Warhammer|PHB} {@dice 1d8+2} damage"
 					]
 				},
 				{
@@ -453,7 +453,7 @@
 				{
 					"name": "Melee Attack",
 					"entries": [
-						"{@dice 1d20+3|+3} with a {@item dagger|PHB} {@dice 1d4+3} damage and +2 fire damage for one hit per turn from {@subclassFeature Genie's Wrath|Warlock|TCE|Genie|TCE|1|TCE}"
+						"{@dice 1d20+3|+3} with a {@item Dagger|PHB} {@dice 1d4+3} damage and +2 fire damage for one hit per turn from {@subclassFeature Genie's Wrath|Warlock|TCE|Genie|TCE|1|TCE}"
 					]
 				},
 				{
@@ -540,13 +540,13 @@
 				{
 					"name": "Melee Attack",
 					"entries": [
-						"{@dice 1d20+5|+5} with a {@item dagger|PHB} {@dice 1d4+3} damage"
+						"{@dice 1d20+5|+5} with a {@item Dagger|PHB} {@dice 1d4+3} damage"
 					]
 				},
 				{
 					"name": "Ranged Attack",
 					"entries": [
-						"{@dice 1d20+3|+3} with {@item light crossbow|PHB}"
+						"{@dice 1d20+3|+3} with {@item Shortbow|PHB} {@dice 1d6+3} damage"
 					]
 				},
 				{
