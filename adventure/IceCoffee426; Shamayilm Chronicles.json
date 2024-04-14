@@ -39,7 +39,7 @@
 					"type": "section",
 					"name": "Introduction",
 					"entries": [
-						"The great library of Shamayilm at the magical University of Baloch has been broken into and some obscure books have gone missing. At the beginning of the summer break, thugs and assassins caused commotion in the campus and some surrounding areas. Master Sage Parma needs to send an adventuring party to retrieve the lost pages. Her biggest fear is what the instigator of the theft might want to do with the stolen pages, the knowledge being incredibly old arcana that may possibly be associated with demonic forces.",
+						"The great library of Shamayilm at the magical University of Baloch has been broken into and some obscure books have gone missing. At the beginning of the summer recess, thugs and assassins caused commotion in the campus and some surrounding areas. Master Sage Parma needs to send a party of adventurers to retrieve the lost pages. Her biggest fear is what the instigator of the theft might want to do with the stolen pages, the knowledge being incredibly old arcana that may possibly be associated with demonic forces.",
 						"Unbeknownst to most, the powerful and mysterious individual who now has possession of the pages, wants to open an extra-dimensional portal to allow a being known as the Queen of Darkness to come into the world and affect individuals therein. Unless he is stopped, the history and peoples of the world as it is known will be in danger of being erased forever."
 					]
 				},
@@ -53,8 +53,8 @@
 							"type": "entries",
 							"name": "The Southern Empire",
 							"entries": [
-								"Established 1000 years ago, the Southern Empire is the largest power on the planet. There are many nations and cities within the continent. Notable nations include Balcha to the south and Kakura to the east. The primary languages of these nations are also the two most common languages of the Empire: the Common Tongue (Zuban) and the Second Tongue (Dusuri).",
-								"Life in the Southern Empire is generally prosperous but as with any civilisation, inequalities are almost inevitable. Particularly between those living in the country and those in the cities. There is also a sense of superiority in Southern folk that the Northern Nations are less sophisticated (to put it mildly)."
+								"Established over a thousand years ago, the Southern Empire is the largest power on the planet. There are many nations and cities within the continent. Notable nations include Balcha to the south and Kakura to the east. The primary languages of these nations are also the two most common languages of the Empire: the Common Tongue (Zuban) and the Second Tongue (Dusuri).",
+								"Life in the Southern Empire is generally prosperous in the year 1145 Imperial Era, but as with any civilisation, inequalities are almost inevitable. Particularly between those living in the country and those in the cities. There is also a sense of superiority in Southern folk that the Northern Nations are less sophisticated (to put it mildly). The history prior to the Imperial Founding is less well-remembered but it is generally accepted that quality of life since the Founding has improved significantly."
 							]
 						},
 						{
@@ -69,7 +69,7 @@
 				},
 				{
 					"type": "entries",
-					"name": "Magic, Gods and Other Lore",
+					"name": "History, Magic and Gods",
 					"entries": [
 						"The world of Zoharna consists of individuals of various races from various planes who migrated or were transported to this plane tens of thousands of years ago. The migrant individuals (often arriving in different locations and at different times) found remnants of cities and civilisations that had seemingly long since been destroyed. Repurposing these ruins, a new and thriving world has been build, but like any world, there is a chequered history with many rivalries.",
 						"The geography of the planet is simple in theory. The Southern Empire and its nations are in the south-east , whilst the various, disparate Nations of the North lie towards the northeast. In practice however, there are many hostile lands in between nations, where most people fear to tread. The planet has been in a state of relative peace for two centuries, despite the many cultural differences between the North and South.",
@@ -93,30 +93,35 @@
 				},
 				{
 					"type": "entries",
-					"name": "Notable Locations",
+					"name": "The City of Baloch",
 					"entries": [
-						"The world of Zoharna consists of individuals of various races from various planes who migrated or were transported to this plane tens of thousands of years ago. The migrant individuals (often arriving in different locations and at different times) found remnants of cities and civilisations that had seemingly long since been destroyed. Repurposing these ruins, a new and thriving world has been build, but like any world, there is a chequered history with many rivalries.",
-						"The geography of the planet is simple in theory. The Southern Empire and its nations are in the south-east , whilst the various, disparate Nations of the North lie towards the northeast. In practice however, there are many hostile lands in between nations, where most people fear to tread. The planet has been in a state of relative peace for two centuries, despite the many cultural differences between the North and South.",
+						"The city of Baloch, where our story starts, is located in the western region of Balcha. Though not the financial, governmental or judicial capital, it nontheless serves as a cultural capital, a center academia and the arts, and it is flocked to by those wishing to live a extravagant lifestyle.",
+						"The most impressive buildings are in the Northern City, and within that in the Sajila district is the Baloch Mahar University. The Northern City is home to many theaters, gardens, taverns and dining experiences, whilst the Southern City has more residential areas. Beyond the city and leading up to it are many roads and forests - however venturing too far out may lead you to one of the many uncharted wildernesseses of the land.",
 						{
 							"type": "entries",
-							"name": "The City of Baloch",
+							"name": "The Baloch Mahar University of Magical and Physical Studies",
 							"entries": [
-								"The city of Baloch, where our story starts, is located in the western region of Balcha. Though not the financial and judicial capital, it serves as a center for culture and academia and is flocked too by those wishing to live a high flying lifestyle.",
-								"The most impressive buildings are in the innter city, and within that in the Sajila district is Baloch Mahar University. The innter city is home to many theaters, gardens, taverns and dining experiences, whilst the outer city has more residential areas. Beyond the city and leading up to it are many roads, however venturing too far out may lead you to one of the many uncharted wildernesseses of the planet."
+								"Without a doubt, the most intricate and beautiful building in the Northern City (arguably in the entire city itself), is the the \"Old Palace\" of Baloch Mahar University. The three wings of the palace are interspersed with large, grassy courtyards, adorned gorgeous fountains with dining and drinking areas (usually bustling with students). There is also a walled garden beyond the main building, which leads up to the student halls buildings. Beautiful and exotic flowers grow in the garden, the shade of the trees providing the students with a small haven to read or relax in on warmer days.",
+								"The main palace building is made of stone and marble, beige and light yellow in colour but with intricate floral designs in bright greens, reds and pinks. The designs vary based on which wing of the academic palace one is in (Lotus, Rose and Jasmine being the most populous during peak term time).",
+								"Magical wards prevent anyone from entering the library by any route other than through the front gates. Any attempt to magically bypass these gates fails. These wards do not prevent creatures from using magic to exit the campus.",
+								"Anyone who tries to fly over the wall into the univserity campus is stopped short. Magical flight is dispelled, and the subject floats slowly to the ground fifty feet outside the gates. An intangible ward forces creatures that can fly naturally to either land or circumnavigate Candlekeep altogether. Ordinary birds are unaffected by this ward, and a clever wizard or other individual can bypass the ward by assuming the form of a Tiny bird. The Avowed don't discuss this flaw with outsiders, but anyone who can see the gulls flying over Candlekeep can easily reach the conclusion that certain creatures are exempt from this magical restriction.",
+								"From any location in Candlekeep, the Master Sage can activate a mythal - an exceptional, unbreakable magical effect - that envelops all of grounds in a protective shield through which nothing but air and sound can pass.",
+								"The building is inspired by locations such as the Taj Mahal, Amber Fort (Jaipur) and Royal Holloway University."
 							]
 						},
 						{
 							"type": "entries",
-							"name": "The Baloch Mahar University of Magical and Physical Studies",
-							"entries": ["..."]
-						},
-						{
-							"type": "entries",
 							"name": "The Shamayilm Library",
-							"entries": ["..."]
+							"entries": [
+								"In the Jasmine wing of the university's Old Palace is a huge hexagonal room over multiple floors. Students and academic staff are almost always in and out, and Master Sage Parma and her team are minor campus celbrities for being almost always on hand to assist anyone in their studies.",
+								"Numerous magical defenses protect the library. The most innocuous include wards to protect the library's books from mold, weevils, and other threats. Other protections are more dramatic.",
+								"Flames larger than a candle are suppressed within the library. Thus, any spell that creates fire is wasted if it is cast within.",
+								"Every book, scroll, and other work considered part of Shamayilm's collection is magically protected against theft. Any such work that is removed from the keep disappears and immediately returns to its proper place in the library. However, this ward has a flaw that the library's sages don't discuss with outsiders. If pages from a book or parts of a scroll are torn away, these fragments can be removed from as long as the bulk of the work remains in the library. Similarly, if a work is split into pieces and entirely removed, only the largest piece disappears and returns to its proper place in the library."
+							]
 						}
 					]
-				}
+				},
+				{ "type": "entries", "name": "NPCs", "entries": ["tbc"] }
 			]
 		}
 	]
