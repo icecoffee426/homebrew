@@ -230,7 +230,7 @@
 			"conditionInflict": []
 		},
 		{
-			"name": "Doryan Gravado",
+			"name": "Doryan of Ryderia",
 			"level": 2,
 			"source": "BalochPCs",
 			"size": ["M"],
@@ -287,7 +287,7 @@
 					"spells": {
 						"0": {
 							"spells": [
-								"{@spell Guidance|PHB|Guidance}",
+								"{@spell Thaumaturgy|PHB}",
 								"{@spell Spare the Dying|PHB}",
 								"{@spell Word of Radiance|XGE}"
 							]
@@ -475,7 +475,7 @@
 					"Aroz is native to the city of Baloch and grew up in one of the city's slums (dragonborn not born into nobility are often stuck in a cycle of poverty).",
 					"Forced to survive on very little, they are a nimble and dextrous individual, and they got by on charming and swindling the wealthy. With some friends in the criminal underworld of the city, they know shortcuts and secret passageways in many places throughout the city and are able to find new ones in new places easily.",
 					"By happenstance, Aroz swiped an agate ring from a noble whose interest they had piqued (aged 15 - adult age for Dragonborn). The ring held an imprisoned efreeti djinn named Arafat, whom Aroz was able to free.",
-					"Grateful for the freedom, and feeling kinship towards Aroz as an efreeti dragonborn, Arafat granted Aroz powerful abilities, a result of which they were able to talk themselves into a position at the university to escape their position.",
+					"Grateful for the freedom, and feeling kinship towards Aroz as an efreeti dragonborn, Arafat granted Aroz powerful abilities (and Meena - a raven-sized summer cardinal which acts as a familiar), a result of which they were able to talk themselves into a position at the university to escape their position.",
 					"Aroz now studies at the university, doing little studying (yet somehow still passing), partying, socialising and gallivanting for the most part! They occasionally source high-quality food-stuffs for Arafat at his request."
 				]
 			},
