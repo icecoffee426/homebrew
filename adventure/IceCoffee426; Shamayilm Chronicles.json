@@ -128,11 +128,15 @@
 					"entries": [
 						{
 							"name": "Master Sage Parma",
-							"entries": "A {@race fairy} from a far-away countryside druidic enclave, Parma has been living in Baloch for decades now, having risen to one of the highest positions possible in magical academia. Fairies, infused with magic from the faewild, don't frequently leave their enclaves but Parma is one of a few exceptions. Her fourth husband Gaz, an older dwarf, past away a few years ago but, with the lifespan of 200, she has not yet given up on finding love again!"
+							"entries": [
+								"A {@race fairy} from a far-away countryside druidic enclave, Parma has been living in Baloch for decades now, having risen to one of the highest positions possible in magical academia. Fairies, infused with magic from the faewild, don't frequently leave their enclaves but Parma is one of a few exceptions. Her fourth husband Gaz, an older dwarf, past away a few years ago but, with the lifespan of 200, she has not yet given up on finding love again!"
+							]
 						},
 						{
 							"name": "Radika Parviz Malora",
-							"entries": "Radhika is a part-orc druid, born in a rather small (and small-minded) village. Impregnated at 15 (just past maturity for orcs), they were being pressured to wed the father of the child (or end the pregnancy). They snuck away in a wagon which stopped at a small druid enclave not far from the village of Layesha. Here they met a community of wonderful individuals that helped them raise their child, Jefar. Eventually, they entered into a polyamorous 5-way partnership with whom they raised Jefar into his maturity. Since their son departed the enclave, they are reconsidering their place and role in the world."
+							"entries": [
+								"Radhika is a part-orc druid, born in a rather small (and small-minded) village. Impregnated at 15 (just past maturity for orcs), they were being pressured to wed the father of the child (or end the pregnancy). They snuck away in a wagon which stopped at a small druid enclave not far from the village of Layesha. Here they met a community of wonderful individuals that helped them raise their child, Jefar. Eventually, they entered into a polyamorous 5-way partnership with whom they raised Jefar into his maturity. Since their son departed the enclave, they are reconsidering their place and role in the world."
+							]
 						}
 					]
 				}
