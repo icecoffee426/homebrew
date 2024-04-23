@@ -15,11 +15,11 @@
 	},
 	"monster": [
 		{
-			"name": "Erza Florian Erinail",
-			"level": 2,
+			"name": "Erza Florian Erin'ail",
+			"level": 3,
 			"source": "BalochPCs",
 			"size": ["M"],
-			"type": "Humanoid (Half Wood-Elf)",
+			"type": "Part-Elf Wizard (Chronurgy Magic)",
 			"alignment": ["L", "G"],
 			"ac": [
 				{
@@ -28,7 +28,7 @@
 			],
 			"hp": {
 				"formula": "6 per level",
-				"average": 14
+				"average": 20
 			},
 			"speed": {
 				"walk": 35
@@ -49,14 +49,13 @@
 				"investigation": "+5",
 				"stealth": "+3"
 			},
-			"senses": ["Darkvision 60 ft."],
+			"senses": ["Darkvision 60 ft.", "Passive Perception: 12"],
 			"languages": ["Common", "Northern", "Ancient"],
 			"trait": [
-				{ "name": "Proficiency Bonus", "entries": ["{@dice +2}"] },
 				{
 					"name": "Initiative",
 					"entries": [
-						"{@dice 1d20+4|+4} (with {@subclassFeature Temporal Awareness|Wizard|PHB|Chronurgy|EGW|2})"
+						"{@dice 1d20+4|+4} ({@subclassFeature Temporal Awareness|Wizard|PHB|Chronurgy|EGW|2})"
 					]
 				},
 				{
@@ -64,46 +63,50 @@
 					"entries": ["{@item Gaming Set|PHB} {@dice 1d20+5|+5}"]
 				}
 			],
-			"spellcasting": [
-				{
-					"name": "Spells",
-					"type": "spellcasting",
-					"ability": "int",
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell Sapping Sting|EGW}",
-								"{@spell Mending|PHB}",
-								"{@spell Frostbite|PHB}"
-							]
-						},
-						"1": {
-							"slots": 3,
-							"spells": [
-								"{@spell Comprehend Languages|PHB} (Ritual)",
-								"{@spell Detect Magic|PHB} (Ritual)",
-								"{@spell Tenser's Floating Disk|PHB} (Ritual)",
-								"{@spell Ice Knife|PHB}",
-								"{@spell Magnify Gravity|EGW}",
-								"{@spell Magic Missile|PHB}",
-								"{@spell Shield|PHB}",
-								"{@spell Ray of Sickness|PHB}"
-							]
-						}
-					},
-					"footerEntries": [
-						"Spell Save {@dc 13}, Spell Attack {@dice 1d20+5|+5}"
-					]
-				}
-			],
 			"action": [
 				{
+					"name": "Spell Save DC {@dice 13}, Spell Attack {@dice 1d20+5|+5}",
+					"entries": [
+						{
+							"name": "Spells",
+							"type": "spellcasting",
+							"ability": "int",
+							"spells": {
+								"0": {
+									"spells": [
+										"{@spell Sapping Sting|EGW}",
+										"{@spell Mending|PHB}"
+									]
+								},
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell Comprehend Languages|PHB} (Ritual)",
+										"{@spell Detect Magic|PHB} (Ritual)",
+										"{@spell Tenser's Floating Disk|PHB} (Ritual)",
+										"{@spell Ice Knife|PHB}",
+										"{@spell Magnify Gravity|EGW}",
+										"{@spell Magic Missile|PHB}",
+										"{@spell Shield|PHB} (Reaction)",
+										"{@spell Ray of Sickness|PHB}",
+										"{@spell Gift of Alacrity|EGW}"
+									]
+								},
+								"2": {
+									"slots": 2,
+									"spells": ["{@spell Scorching Ray|PHB}"]
+								}
+							}
+						}
+					]
+				},
+				{
 					"name": "{@classFeature Arcane Recovery|Wizard|PHB|1}",
-					"entries": ["Recover spell slots on short rest."]
+					"entries": []
 				},
 				{
 					"name": "Unarmed Melee Attack",
-					"entries": ["{@dice 1d20| +0}"]
+					"entries": ["{@dice 1d20+2| +2} (1 damage)"]
 				}
 			],
 			"reaction": [
@@ -116,7 +119,7 @@
 				"entries": [
 					"Erza has had a difficult past. Her family, historically with many wizards who studied magic that was forbidden in the kingdom of Ryderia, are now just moderate merchants with one large estate. Though not exactly the apple of her parents' eye, her Nana always encouraged her to be herself and to pursue her own interests, despite her feeling like an outsider among her peers.",
 					"Eventually, she studied magic hard enough to be able to gain entry to Baloch Mahar University in the south. Her Nana paid for the travel and deposit so Erza could study in the South, unimpeded by the archaic laws in the North. Over many years, and overcoming some prejudice, she has risen to the position of Head Librarian of the Shamayilm library at the university.",
-					"As a hugely respected member of the community, Erza has risen incredibly far in arcane academia, but she still struggles a little in her personal interactions. Her boss and (only real friend) is Master Sage Parma - a pixie who oversees much of the magical research at Baloch Univserity."
+					"As a hugely respected member of the community, Erza has risen incredibly far in arcane academia, but she still struggles a little in her personal interactions. Her boss and (only real friend) is Master Sage Parma - a fairy who oversees much of the magical research at Baloch Univserity."
 				]
 			},
 			"actionTags": [],
