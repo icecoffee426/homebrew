@@ -61,21 +61,27 @@
 				{
 					"name": "Tool Proficiency:",
 					"entries": ["{@item Gaming Set|PHB} {@dice 1d20+5|+5}"]
+				},
+				{
+					"name": "{@classFeature Arcane Recovery|Wizard|PHB|1}",
+					"entries": []
 				}
 			],
 			"action": [
 				{
-					"name": "Spell Save DC {@dice 13}, Spell Attack {@dice 1d20+5|+5}",
+					"name": "Spellcasting",
 					"entries": [
+						"Spell Save DC {@dice 13}, Spell Attack {@dice 1d20+5|+5}",
 						{
-							"name": "Spells",
+							"name": "",
 							"type": "spellcasting",
 							"ability": "int",
 							"spells": {
 								"0": {
 									"spells": [
 										"{@spell Sapping Sting|EGW}",
-										"{@spell Mending|PHB}"
+										"{@spell Mending|PHB}",
+										"{@spell Message|PHB}"
 									]
 								},
 								"1": {
@@ -94,19 +100,20 @@
 								},
 								"2": {
 									"slots": 2,
-									"spells": ["{@spell Scorching Ray|PHB}"]
+									"spells": [
+										"{@spell Scorching Ray|PHB}",
+										"{@spell Nathair's Mischief|FTD}"
+									]
 								}
 							}
 						}
 					]
 				},
 				{
-					"name": "{@classFeature Arcane Recovery|Wizard|PHB|1}",
-					"entries": []
-				},
-				{
-					"name": "Unarmed Melee Attack",
-					"entries": ["{@dice 1d20+2| +2} (1 damage)"]
+					"name": "Unarmed Strike",
+					"entries": [
+						"{@atk mw} {@hit 0} to hit, reach 5 ft, one target. {@h} 1 bludgeoning damage"
+					]
 				}
 			],
 			"reaction": [
@@ -130,11 +137,11 @@
 			"conditionInflict": []
 		},
 		{
-			"name": "Aramil Naigal",
-			"level": 2,
+			"name": "Aramil Nai'igal",
+			"level": 3,
 			"source": "BalochPCs",
 			"size": ["M"],
-			"type": "Humanoid (High-Elf)",
+			"type": "High-Elf Fighter (Eldritch Knight)",
 			"alignment": ["C", "N"],
 			"ac": [
 				{
@@ -144,7 +151,7 @@
 			],
 			"hp": {
 				"formula": "8 per level",
-				"average": 20
+				"average": 28
 			},
 			"speed": {
 				"walk": 30
@@ -165,49 +172,65 @@
 				"history": "+4",
 				"perception": "+2"
 			},
-			"senses": ["Darkvision 60 ft."],
+			"senses": ["Darkvision 60 ft.", "Passive Perception: 12"],
 			"languages": ["Common", "Ancient", "Abyssal"],
-			"resist": ["radiant"],
 			"trait": [
-				{ "name": "Proficiency Bonus", "entries": ["{@dice +2}"] },
 				{ "name": "Initiative", "entries": ["{@dice 1d20+1|+1}"] },
 				{
 					"name": "Tool Proficiency:",
 					"entries": [
 						"{@item Navigator's Tools|PHB} {@dice 1d20+4|+4}"
 					]
-				}
-			],
-			"spellcasting": [
-				{
-					"name": "Spells",
-					"type": "spellcasting",
-					"ability": "int",
-					"spells": {
-						"0": {
-							"spells": ["{@spell thunderclap|XGE|Thunderclap}"]
-						}
-					},
-					"footerEntries": [
-						"Spell Save {@dc 12}, Spell Attack {@dice 1d20+4|+4}"
-					]
-				}
-			],
-			"action": [
+				},
 				{
 					"name": "{@classFeature Action Surge|Fighter|PHB|2}",
 					"entries": []
 				},
 				{
-					"name": "Melee Attack",
+					"name": "{@subclassFeature Weapon Bond|Fighter|PHB|Eldritch Knight|PHB|3}",
+					"entries": []
+				}
+			],
+			"spellcasting": [],
+			"action": [
+				{
+					"name": "{@item Longsword|PHB}",
 					"entries": [
-						"{@dice 1d20+7|+5} with a {@item Longsword|PHB} {@dice 1d10+5} damage(extra +2 from {@optfeature Dueling|PHB})"
+						"{@atk mw} {@hit 5} to hit, reach 5 ft, one target. {@h} {@damage 1d8+3} (or or {@damage 1d10+3} if held in both hands) slashing damage, +2 damage if no weapon in offhand from {@optfeature Dueling|PHB})."
 					]
 				},
 				{
-					"name": "Ranged Attack",
+					"name": "{@item Light Crossbow|PHB}",
 					"entries": [
-						"{@dice 1d20+3|+3} with {@item light crossbow|PHB|Light Crossbow} {@dice 1d8+1|+1} damage"
+						"{@atk mw} {@hit 3} to hit, range 80/320ft, one target. {@h} {@damage 1d8+1} piercing damage."
+					]
+				},
+				{
+					"name": "Spellcasting",
+					"entries": [
+						"Spell Attack {@dice 1d20+4|+4}, Spell Save {@dc 12}",
+						{
+							"name": "",
+							"type": "spellcasting",
+							"ability": "int",
+							"spells": {
+								"0": {
+									"spells": [
+										"{@spell Thunderclap|XGE}",
+										"{@spell Control Flames|XGE}",
+										"{@spell Green-Flame Blade|TCE}"
+									]
+								},
+								"1": {
+									"slots": 2,
+									"spells": [
+										"{@spell Shield|PHB}",
+										"{@spell Unseen Servant|PHB",
+										"{@spell Thunderwave |PHB"
+									]
+								}
+							}
+						}
 					]
 				}
 			],
@@ -219,8 +242,8 @@
 			],
 			"fluff": {
 				"entries": [
-					"Youngest of the prime branch of the Naigal family, Aramil grew up wealthy and spoilt. With little chance of inheriting the large family seats, he was tutored in the ways of a warrior to further the family's secret goals.",
-					"For generations, the Naigal's, in exchange for power and riches, have been doing the bidding of a demon named Rakasha, doing her bidding in the material plane. Aramil failed consistently in his studies, despite being intelligent and strong, as he was undisciplined and unmotivated, instead choosing a life of hedonism.",
+					"Youngest of the prime branch of the Nai'igal family, Aramil grew up wealthy and spoilt. With little chance of inheriting the large family seats, he was tutored in the ways of a warrior to further the family's secret goals.",
+					"For generations, the Nai'igal's, in exchange for power and riches, have been doing the bidding of a demon named Rakasha, doing her bidding in the material plane. Aramil failed consistently in his studies, despite being intelligent and strong, as he was undisciplined and unmotivated, instead choosing a life of hedonism.",
 					"During a moment of apathy, Aramil inadvertently started a fire in one of the family vaults at which he was training, killing his instructor and destroying many relics in the process. His parents, after a stern discussion where Aramil refused to change his ways, shipped him to Baloch to study at the unversity, effectively cutting him off and washing their hands of his poor attitude and lack of interest in the family's values.",
 					"The life of a student (and likely a merchant or mercenary thereafter) is not one that suits Aramil. Willing to do anything to find favour with his family again and return to a lavish lifestlye, he is using his spare time from his studies looking for any artefacts that could serve Rakasha's mysterious goals. Oddly, however, he is for the first time finding enjoyment in his studies and having an element of stucture in his life."
 				]
@@ -233,11 +256,142 @@
 			"conditionInflict": []
 		},
 		{
-			"name": "Doryan of Ryderia",
-			"level": 2,
+			"name": "Aroz Ravazi",
+			"level": 3,
 			"source": "BalochPCs",
 			"size": ["M"],
-			"type": "Humanoid (Human)",
+			"type": "Efreeti Dragonborn Warlock (Genie Patron)",
+			"alignment": ["N", "N"],
+			"ac": [
+				{
+					"ac": 14,
+					"from": ["Genie's Robes +1"]
+				}
+			],
+			"hp": {
+				"formula": "6 per level",
+				"average": 21
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 16,
+			"con": 13,
+			"int": 8,
+			"wis": 12,
+			"cha": 16,
+			"save": {
+				"wis": "+3",
+				"cha": "+5"
+			},
+			"skill": {
+				"deception": "+5",
+				"persuasion": "+5",
+				"perception": "+3",
+				"sleight of hand": "+5",
+				"stealth": "+5"
+			},
+			"senses": ["Passive Perception: 13"],
+			"languages": ["Common", "Cant"],
+			"resist": ["fire"],
+			"trait": [
+				{ "name": "Initiative", "entries": ["{@dice 1d20+3|+3}"] },
+				{
+					"name": "Pact Boon: {@optfeature Pact of the Chain|PHB}",
+					"entries": [
+						"Summons a summer cardinal with {@creature raven|PHB} stats, does fire damage. Vanishes if it dies, you die or you are separated by more than 5 miles."
+					]
+				},
+				{
+					"name": "Invocation: {@optfeature Agonising Blast|PHB}",
+					"entries": []
+				},
+				{
+					"name": "Invocation: {@optfeature Repelling Blast|PHB}",
+					"entries": []
+				},
+				{
+					"name": "{@subclassFeature Genie's Wrath|Warlock|TCE|Genie|TCE|1|TCE}",
+					"entries": []
+				},
+				{
+					"name": "Tool Proficiency",
+					"entries": ["{@item Thieves' Tools|PHB} {@dice 1d20+5|+5}"]
+				},
+				{
+					"name": "Magic Item",
+					"entries": [
+						"Protective Bracers: can cast {@spell Blade Ward|PHB} as a bonus action once per day."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "{@item Dagger|PHB}",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft, one target. {@h} {@damage 1d4+3} piercing damage (+2 fire damage once per round)."
+					]
+				},
+				{
+					"name": "{@race dragonborn|PHB|Breath Weapon}",
+					"entries": ["{@dice 2d6} fire, 30ft line, save DC 13"]
+				},
+				{
+					"name": "{@subclassFeature Bottled Respite|Warlock|TCE|Genie|TCE|1|TCE}",
+					"entries": []
+				},
+				{
+					"name": "Spellcasting",
+					"entries": [
+						{
+							"name": "Spell Attack {@dice 1d20+5|+5}, Spell Save {@dc 13}",
+							"type": "spellcasting",
+							"ability": "cha",
+							"spells": {
+								"0": {
+									"spells": [
+										"{@spell eldritch blast|PHB|Eldritch Blast}",
+										"{@spell friends|PHB|Friends}"
+									]
+								},
+								"2": {
+									"slots": 2,
+									"spells": [
+										"{@spell Burning Hands|PHB} (Patron)",
+										"{@spell Hellish Rebuke|PHB} (Reaction)",
+										"{@spell Hex|PHB} (Bonus Action)",
+										"{@spell Scorching Ray|PHB}",
+										"{@spell Find Familiar|PHB} (Ritual)"
+									]
+								}
+							}
+						}
+					]
+				}
+			],
+			"fluff": {
+				"entries": [
+					"Aroz is native to the city of Baloch and grew up in one of the city's slums (dragonborn not born into nobility are often stuck in a cycle of poverty).",
+					"Forced to survive on very little, they are a nimble and dextrous individual, and they got by on charming and swindling the wealthy. With some friends in the criminal underworld of the city, they know shortcuts and secret passageways in many places throughout the city and are able to find new ones in new places easily.",
+					"By happenstance, Aroz swiped an agate ring from a noble whose interest they had piqued (aged 15 - adult age for Dragonborn). The ring held an imprisoned efreeti djinn named Arafat, whom Aroz was able to free.",
+					"Grateful for the freedom, and feeling kinship towards Aroz as an efreeti dragonborn, Arafat granted Aroz powerful abilities (and Meena - a raven-sized summer cardinal which acts as a familiar), a result of which they were able to talk themselves into a position at the university to escape their position.",
+					"Aroz now studies at the university, doing little studying (yet somehow still passing), partying, socialising and gallivanting for the most part! They occasionally source high-quality food-stuffs for Arafat at his request."
+				]
+			},
+			"actionTags": [],
+			"hasFluff": true,
+			"languageTags": ["C", "E"],
+			"damageTags": ["S"],
+			"miscTags": ["MW", "AOE"],
+			"conditionInflict": []
+		},
+		{
+			"name": "Doryan of Ryderia",
+			"level": 3,
+			"source": "BalochPCs",
+			"size": ["M"],
+			"type": "Human Cleric of Talee (Tempest Domain)",
 			"alignment": ["L", "G"],
 			"ac": [
 				{
@@ -247,7 +401,7 @@
 			],
 			"hp": {
 				"formula": "7 per level",
-				"average": 17
+				"average": 24
 			},
 			"speed": {
 				"walk": 30
@@ -268,52 +422,30 @@
 				"survival": "+4",
 				"perception": "+5"
 			},
-			"passive": 13,
+			"senses": ["Passive Perception: 15"],
 			"languages": ["Common", "Northern"],
 			"trait": [
-				{ "name": "Proficiency Bonus", "entries": ["{@dice +2}"] },
 				{ "name": "Initiative", "entries": ["{@dice 1d20+1|+1}"] },
 				{
-					"name": "{@subclassFeature Channel Divinity|Cleric|PHB|Tempest|PHB|2|PHB}",
+					"name": "{@classFeature Channel Divinity|Cleric|PHB|2}",
 					"entries": []
 				},
 				{
-					"name": "Tool Proficiency:",
+					"name": "Tool Proficiency",
 					"entries": ["{@item Herbalism Kit|PHB} {@dice 1d20+5|+5}"]
-				}
-			],
-			"spellcasting": [
+				},
 				{
-					"name": "Spells",
-					"type": "spellcasting",
-					"ability": "wis",
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell Thaumaturgy|PHB}",
-								"{@spell Spare the Dying|PHB}",
-								"{@spell Word of Radiance|XGE}"
-							]
-						},
-						"1": {
-							"slots": 3,
-							"spells": [
-								"{@spell Thunderwave|PHB} (Domain)",
-								"{@spell Fog Cloud|PHB} (Domain)",
-								"{@link Cleric Spells|http://dnd5e.wikidot.com/spells:cleric}"
-							]
-						}
-					},
-					"footerEntries": [
-						"Spell Save {@dc 13}, Spell Attack {@dice 1d20+5|+5}"
+					"name": "Magic Item",
+					"entries": [
+						"Amulet of Compassion: can cast {@spell Cure Wounds|PHB} once per day."
 					]
 				}
 			],
 			"action": [
 				{
-					"name": "Melee Attack",
+					"name": "{@item Warhammer|PHB}",
 					"entries": [
-						"{@dice 1d20+4|+4} with a {@item Warhammer|PHB} {@dice 1d8+2} damage"
+						"{@atk mw} {@hit 4} to hit, reach 5 ft, one target. {@h} {@damage 1d8+2} bludgeoning damage."
 					]
 				},
 				{
@@ -323,18 +455,48 @@
 				{
 					"name": "{@subclassFeature Channel Divinity: Destructive Wrath|Cleric|PHB|Tempest|PHB|2|PHB}",
 					"entries": []
+				},
+				{
+					"name": "Spellcasting",
+					"entries": [
+						"Spell Save {@dc 13}, Spell Attack {@dice 1d20+5|+5}",
+						{
+							"name": "Spells",
+							"type": "spellcasting",
+							"ability": "wis",
+							"spells": {
+								"0": {
+									"spells": [
+										"{@spell Thaumaturgy|PHB}",
+										"{@spell Spare the Dying|PHB}",
+										"{@spell Word of Radiance|XGE}"
+									]
+								},
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell Thunderwave|PHB}",
+										"{@spell Fog Cloud|PHB}",
+										"{@link Cleric Spells|http://dnd5e.wikidot.com/spells:cleric}"
+									]
+								},
+								"2": {
+									"slots": 2,
+									"spells": [
+										"{@spell Shatter|PHB}",
+										"{@spell Gust of Wind|PHB}",
+										"{@link Cleric Spells|http://dnd5e.wikidot.com/spells:cleric}"
+									]
+								}
+							}
+						}
+					]
 				}
 			],
 			"reaction": [
 				{
 					"name": "{@subclassFeature Wrath of the Storm|Cleric|PHB|Tempest|PHB|1|PHB}",
 					"entries": []
-				}
-			],
-			"bonus": [
-				{
-					"name": "{@spell Sanctuary|PHB}",
-					"entries": ["(spell must be prepared)"]
 				}
 			],
 			"fluff": {
@@ -354,147 +516,11 @@
 			"conditionInflict": []
 		},
 		{
-			"name": "Aroz Ravazi",
-			"level": 2,
-			"source": "BalochPCs",
-			"size": ["M"],
-			"type": "Humanoid (Efreeti Dragonborn)",
-			"alignment": ["N", "N"],
-			"ac": [
-				{
-					"ac": 14,
-					"from": ["Genie's Robes"]
-				}
-			],
-			"hp": {
-				"formula": "6 per level",
-				"average": 15
-			},
-			"speed": {
-				"walk": 30
-			},
-			"str": 10,
-			"dex": 16,
-			"con": 13,
-			"int": 8,
-			"wis": 12,
-			"cha": 16,
-			"save": {
-				"wis": "+3",
-				"cha": "+5"
-			},
-			"skill": {
-				"deception": "+5",
-				"persuasion": "+5",
-				"perception": "+3 (if familiar within 100ft)",
-				"sleight of hand": "+5",
-				"stealth": "+5"
-			},
-			"passive": 13,
-			"languages": ["Common", "Cant"],
-			"resist": ["fire"],
-			"trait": [
-				{ "name": "Proficiency Bonus", "entries": ["{@dice +2}"] },
-				{ "name": "Initiative", "entries": ["{@dice 1d20+3|+3}"] },
-				{
-					"name": "Invocations",
-					"entries": [
-						{
-							"type": "optfeature",
-							"name": "{@optfeature Agonising Blast|PHB}",
-							"entries": []
-						},
-						{
-							"type": "optfeature",
-							"name": "{@optfeature Mask of Many Faces|PHB}",
-							"entries": []
-						},
-						{
-							"type": "optfeature",
-							"name": "{@optfeature Pact of the Chain|PHB}",
-							"entries": [
-								"Summons a summer cardinal with {@creature raven|PHB} stats, does fire damage. Vanishes if it dies, you die or you are separated by more than 5 miles."
-							]
-						}
-					]
-				},
-				{
-					"name": "Tool Proficiency:",
-					"entries": ["{@item Thieves' Tools|PHB} {@dice 1d20+5|+5}"]
-				}
-			],
-			"spellcasting": [
-				{
-					"name": "Spells",
-					"type": "spellcasting",
-					"ability": "cha",
-					"spells": {
-						"0": {
-							"spells": [
-								"{@spell eldritch blast|PHB|Eldritch Blast}",
-								"{@spell friends|PHB|Friends}"
-							]
-						},
-						"1": {
-							"slots": 2,
-							"spells": [
-								"{@spell Burning Hands|PHB} (Patron)",
-								"{@spell Hellish Rebuke|PHB} (Reaction)",
-								"{@spell Hex|PHB} (Bonus Action)",
-								"{@spell Find Familiar|PHB} (Ritual)",
-								"{@spell Disguise Self|PHB} (Once per LR)"
-							]
-						}
-					},
-					"footerEntries": [
-						"Spell Save {@dc 13}, Spell Attack {@dice 1d20+5|+5}"
-					]
-				}
-			],
-			"action": [
-				{
-					"name": "Melee Attack",
-					"entries": [
-						"{@dice 1d20+3|+3} with a {@item Dagger|PHB} {@dice 1d4+3} damage and +2 fire damage for one hit per turn from {@subclassFeature Genie's Wrath|Warlock|TCE|Genie|TCE|1|TCE}"
-					]
-				},
-				{
-					"name": "{@race dragonborn|PHB|Breath Weapon}",
-					"entries": ["{@dice 2d6} fire, 30ft line, save DC 13"]
-				},
-				{
-					"name": "{@subclassFeature Bottled Respite|Warlock|TCE|Genie|TCE|1|TCE}",
-					"entries": []
-				}
-			],
-			"bonus": [
-				{
-					"name": "{@spell Hex|PHB}",
-					"entries": []
-				}
-			],
-			"fluff": {
-				"entries": [
-					"Aroz is native to the city of Baloch and grew up in one of the city's slums (dragonborn not born into nobility are often stuck in a cycle of poverty).",
-					"Forced to survive on very little, they are a nimble and dextrous individual, and they got by on charming and swindling the wealthy. With some friends in the criminal underworld of the city, they know shortcuts and secret passageways in many places throughout the city and are able to find new ones in new places easily.",
-					"By happenstance, Aroz swiped an agate ring from a noble whose interest they had piqued (aged 15 - adult age for Dragonborn). The ring held an imprisoned efreeti djinn named Arafat, whom Aroz was able to free.",
-					"Grateful for the freedom, and feeling kinship towards Aroz as an efreeti dragonborn, Arafat granted Aroz powerful abilities (and Meena - a raven-sized summer cardinal which acts as a familiar), a result of which they were able to talk themselves into a position at the university to escape their position.",
-					"Aroz now studies at the university, doing little studying (yet somehow still passing), partying, socialising and gallivanting for the most part! They occasionally source high-quality food-stuffs for Arafat at his request."
-				]
-			},
-			"actionTags": [],
-			"hasFluff": true,
-			"languageTags": ["C", "E"],
-			"damageTags": ["S"],
-			"miscTags": ["MW", "AOE"],
-			"conditionInflict": []
-		},
-		{
 			"name": "Jefar Parviz",
-			"level": 2,
+			"level": 3,
 			"source": "BalochPCs",
 			"size": ["M"],
-			"type": "humanoid (half-orc)",
+			"type": "Part-Orc Rogue (Soulknife)",
 			"alignment": ["L", "G"],
 			"ac": [
 				{
@@ -503,8 +529,8 @@
 				}
 			],
 			"hp": {
-				"formula": "8 per level",
-				"average": 20
+				"formula": "6 per level",
+				"average": 21
 			},
 			"speed": {
 				"walk": 30
@@ -521,39 +547,50 @@
 			},
 			"skill": {
 				"athletics": "+2",
-				"acrobatics": "+7 (Expertise)",
+				"acrobatics": "+7",
 				"persuasion": "+4",
-				"performance": "+6 (Expertise)"
+				"performance": "+6"
 			},
-			"passive": 13,
+			"senses": ["Passive Perception: 11"],
 			"languages": ["Common", "Druidic"],
 			"trait": [
-				{ "name": "Proficiency Bonus", "entries": ["{@dice +2}"] },
-				{ "name": "Initiative", "entries": ["{@dice 1d20+3|+3}"] },
 				{ "name": "Initiative", "entries": ["{@dice 1d20+3|+3}"] },
 				{
-					"name": "Tool Expertise:",
+					"name": "Tool Expertise.",
 					"entries": [
-						"Any 3 {@item Musical Instruments|PHB|Musical Instrument} {@dice 1d20+5|+}"
+						"{@item Musical Instruments|PHB} {@dice 1d20+5|+5}",
+						"{@item Disguise Kit|PHB} {@dice 1d20+5|+5}"
 					]
+				},
+				{
+					"name": "{@classFeature Sneak Attack|Rogue|PHB|1|PHB}",
+					"entries": [
+						"Once per turn, deal an extra {@dice 2d6} damage when hitting a target with a weapon attack which has advantage on the attack roll, or when the target of the attack is within 5 feet of an ally that isn't {@condition incapacitated} (but does not have disadvantage on the attack roll)."
+					]
+				},
+				{
+					"name": "{@subclassFeature Psionic Power|Rogue|PHB|Soulknife|TCE|3",
+					"entries": []
+				},
+				{
+					"name": "{@subclassFeature Psi-Bolstered Knack|Rogue|TCE|Soulknife|TCE|3}",
+					"entries": []
+				},
+				{
+					"name": "{@subclassFeature Psychic Whispers|Rogue|TCE|Soulknife|TCE|3}",
+					"entries": []
 				}
 			],
 			"action": [
 				{
-					"name": "Melee Attack",
+					"name": "{@item Dagger|PHB}",
 					"entries": [
-						"{@dice 1d20+5|+5} with a {@item Dagger|PHB} {@dice 1d4+3} damage"
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft, throw range 20/60ft, one target. {@h} {@damage 1d4+3} piercing damage. Can use bonus action to make an additional attack for {@damage 1d4} damage."
 					]
 				},
 				{
-					"name": "Ranged Attack",
-					"entries": [
-						"{@dice 1d20+3|+3} with {@item Shortbow|PHB} {@dice 1d6+3} damage"
-					]
-				},
-				{
-					"name": "{@classFeature Sneak Attack|Rogue|PHB|1}",
-					"entries": ["+{@dice 1d6} damage (conditional)"]
+					"name": "{@subclassFeature Psychic Blades|Rogue|PHB|Soulknife|TCE|3}",
+					"entries": []
 				}
 			],
 			"bonus": [

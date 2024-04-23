@@ -49,12 +49,12 @@
 					"name": "The World of Zoharna",
 					"entries": [
 						"The world of Zoharna consists of individuals of various races from various planes who migrated or were transported to this plane tens of thousands of years ago. The migrant individuals (often arriving in different locations and at different times) found remnants of cities and civilisations that had seemingly long since been destroyed. Repurposing these ruins, a new and thriving world has been build, but like any world, there is a chequered history with many rivalries.",
-						"The geography of the planet is simple in theory. The Southern Empire and its nations are in the south-east , whilst the various, disparate Nations of the North lie towards the northeast. In practice however, there are many hostile lands in between nations, where most people fear to tread. The planet has been in a state of relative peace for two centuries, despite the many cultural differences between the North and South.",
+						"The geography of the planet is simple in theory. The Southern Empire and its nations are in the south-east, whilst the various, disparate Nations of the North lie towards the north-west. In practice however, there are many hostile lands in between nations, where most people fear to tread. The planet has been in a state of relative peace for over two centuries, despite the many cultural differences between the North and South.",
 						{
 							"type": "entries",
 							"name": "The Southern Empire",
 							"entries": [
-								"Established over a thousand years ago, the Southern Empire is the largest power on the planet. There are many nations and cities within the continent. Notable nations include Balcha to the south and Kakura to the east. The primary languages of these nations are also the two most common languages of the Empire: the Common Tongue (Zuban) and the Second Tongue (Dusuri).",
+								"Established over a thousand years ago, the Southern Empire is the largest power on the planet. There are many nations and cities within the continent. Notable nations include Balcha to the south (capital city Vehar) and Kakura (capital city of the same name) to the east. The primary languages of these nations are also the two most common languages of the Empire: the Common Tongue (Zuban) and the Second Tongue (Dusuri).",
 								"Life in the Southern Empire is generally prosperous in the year 1145 Imperial Era, but as with any civilisation, inequalities are almost inevitable. Particularly between those living in the country and those in the cities. There is also a sense of superiority in Southern folk that the Northern Nations are less sophisticated (to put it mildly). The history prior to the Imperial Founding is less well-remembered but it is generally accepted that quality of life since the Founding has improved significantly."
 							]
 						},
@@ -63,7 +63,8 @@
 							"name": "The Northern Nations",
 							"entries": [
 								"Unlike the Southern Empire, the Northern Nations do not live under a unified banner and ruler. Tribalism, traditionalism and religious feuds permeate the nations, with many wars and battles waged in the past in the names of various gods and causes.",
-								"At present there is peace between the Northern Nations and the Southern Empire, but the nations among themselves have ever-lasting rivalries fought out in smaller battles. Little else is known about life in the Northern Nations but more may be gleaned from former residents who have moved to Southern Imperial cities in search of a different life."
+								"At present there is peace between the Northern Nations and the Southern Empire, but the nations among themselves have ever-lasting rivalries fought out in smaller battles. Little else is known about life in the Northern Nations but more may be gleaned from former residents who have moved to Southern Imperial cities in search of a different life.",
+								"A few of the common nations of the North are Ryderia, Scelika, Polgi and Termony."
 							]
 						}
 					]
@@ -72,8 +73,7 @@
 					"type": "entries",
 					"name": "History, Magic and Gods",
 					"entries": [
-						"The world of Zoharna consists of individuals of various races from various planes who migrated or were transported to this plane tens of thousands of years ago. The migrant individuals (often arriving in different locations and at different times) found remnants of cities and civilisations that had seemingly long since been destroyed. Repurposing these ruins, a new and thriving world has been build, but like any world, there is a chequered history with many rivalries.",
-						"The geography of the planet is simple in theory. The Southern Empire and its nations are in the south-east , whilst the various, disparate Nations of the North lie towards the northeast. In practice however, there are many hostile lands in between nations, where most people fear to tread. The planet has been in a state of relative peace for two centuries, despite the many cultural differences between the North and South.",
+						"Something...",
 						{
 							"type": "entries",
 							"name": "Magic",
@@ -87,7 +87,7 @@
 							"name": "Gods",
 							"entries": [
 								"A huge number of deities are revered, worshiped, and feared throughout the lands of Zaharna. Although the gods do not manifest in matters of the world, clerics can be granted divine power, those with more nefarious motives may perform dark deeeds in the names of their gods, and shining paladins can stand like beacons against the darkness. It is difficult to be ambivalent about the deities and deny their existence in such a world.",
-								"Many people have a favorite among the gods, one whose ideals and teachings they make their own. And a few people dedicate themselves entirely to a single god, usually serving as a priest or champion of that god’s ideals. You can learn more about gods in the world by speaking to individuals or visiting temples/shrines to a particular god."
+								"Many people have a favorite among the gods, one whose ideals and teachings they make their own. And a few people dedicate themselves entirely to a single god, usually serving as a priest or champion of that god's ideals. You can learn more about gods in the world by speaking to individuals or visiting temples/shrines to a particular god."
 							]
 						}
 					]
@@ -136,6 +136,12 @@
 							"name": "Radika Parviz Malora",
 							"entries": [
 								"Radika is a part-orc druid, born in a rather small (and small-minded) village. Impregnated at 15 (just past maturity for orcs), they were being pressured to wed the father of the child (or end the pregnancy). They snuck away in a wagon which stopped at a small druid enclave not far from the village of Layesha. Here they met a community of wonderful individuals that helped them raise their child, Jefar. Eventually, they entered into a polyamorous 5-way partnership with whom they raised Jefar into his maturity. Since their son departed the enclave, they are reconsidering their place and role in the world."
+							]
+						},
+						{
+							"name": "Onyx Kosciolec",
+							"entries": [
+								"A migrant from the North, Onyx left his home in Polski to pursue a better life. Unfortunately his rose-tinted view of the Southern peoples and culture often means he rubs people up the wrong way. He works at a potions shop in the center of the city and sells some of his own \"products\" (as well as licenses to sell these products in a blatant MLM scheme). They are mostly herb pills and bogus concoctions."
 							]
 						}
 					]
