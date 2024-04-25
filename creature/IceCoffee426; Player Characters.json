@@ -59,7 +59,7 @@
 					]
 				},
 				{
-					"name": "Tool Proficiency:",
+					"name": "Tool Proficiency",
 					"entries": ["{@item Gaming Set|PHB} {@dice 1d20+5|+5}"]
 				},
 				{
@@ -71,7 +71,7 @@
 				{
 					"name": "Spellcasting",
 					"entries": [
-						"Spell Save DC {@dice 13}, Spell Attack {@dice 1d20+5|+5}",
+						"Spell Save {@dc 12}, Spell Attack {@dice 1d20+5|+5}",
 						{
 							"name": "",
 							"type": "spellcasting",
@@ -225,8 +225,8 @@
 									"slots": 2,
 									"spells": [
 										"{@spell Shield|PHB}",
-										"{@spell Unseen Servant|PHB",
-										"{@spell Thunderwave |PHB"
+										"{@spell Unseen Servant|PHB}",
+										"{@spell Thunderwave |PHB}"
 									]
 								}
 							}
@@ -335,7 +335,7 @@
 				},
 				{
 					"name": "{@race dragonborn|PHB|Breath Weapon}",
-					"entries": ["{@dice 2d6} fire, 30ft line, save DC 13"]
+					"entries": ["{@dice 2d6} fire, 30ft line, save {@dc 13}"]
 				},
 				{
 					"name": "{@subclassFeature Bottled Respite|Warlock|TCE|Genie|TCE|1|TCE}",
@@ -556,10 +556,9 @@
 			"trait": [
 				{ "name": "Initiative", "entries": ["{@dice 1d20+3|+3}"] },
 				{
-					"name": "Tool Expertise.",
+					"name": "Tool Proficiency",
 					"entries": [
-						"{@item Musical Instruments|PHB} {@dice 1d20+5|+5}",
-						"{@item Disguise Kit|PHB} {@dice 1d20+5|+5}"
+						"{@item Musical Instruments|PHB} {@dice 1d20+5|+5}, {@item Disguise Kit|PHB} {@dice 1d20+5|+5}"
 					]
 				},
 				{
@@ -567,10 +566,6 @@
 					"entries": [
 						"Once per turn, deal an extra {@dice 2d6} damage when hitting a target with a weapon attack which has advantage on the attack roll, or when the target of the attack is within 5 feet of an ally that isn't {@condition incapacitated} (but does not have disadvantage on the attack roll)."
 					]
-				},
-				{
-					"name": "{@subclassFeature Psionic Power|Rogue|PHB|Soulknife|TCE|3",
-					"entries": []
 				},
 				{
 					"name": "{@subclassFeature Psi-Bolstered Knack|Rogue|TCE|Soulknife|TCE|3}",
@@ -614,6 +609,80 @@
 			"damageTags": ["S"],
 			"miscTags": ["MW", "RW"],
 			"conditionInflict": []
+		},
+		{
+			"name": "Nova",
+			"source": "BalochPCs",
+			"size": ["T"],
+			"type": "beast",
+			"ac": [12],
+			"hp": {
+				"average": 1,
+				"formula": "1d4 - 1"
+			},
+			"speed": {
+				"walk": 10,
+				"fly": 50
+			},
+			"str": 2,
+			"dex": 14,
+			"con": 8,
+			"int": 2,
+			"wis": 12,
+			"cha": 6,
+			"skill": {
+				"perception": "+3"
+			},
+			"passive": 13,
+			"cr": "0",
+			"trait": [
+				{
+					"name": "Sentinel Familiar",
+					"entries": [
+						"While Nova is perched on your shoulder, you gain a bonus to your  Perception equal to your Charisma modifier. While perched on your shoulder, the raven can’t be targeted by any attack or other harmful effect; only you can cast spells on it; it can’t take damage; and it is incapacitated.",
+						"You can see through Nova's eyes and hear what she hears while she is within 100 feet of you. In combat, you control how Nova acts. If she is slain by a creature, you gain advantage on all attack rolls against the killer for the next 24 hours. While Nova is within 100 feet of you, she can awaken you from sleep as a bonus action. Nova vanishes when she dies, if you die, or if the two of you are separated by more than 5 miles (you can resummon her using your Find Familiar ritual spell at the end of a short or long rest)."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Beak",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}1 piercing damage."
+					]
+				},
+				{
+					"name": "Claw",
+					"entries": [
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}1 piercing damage (target makes a {@dc 10} dexterity saving throw or is blidned for one turn."
+					]
+				}
+			],
+			"environment": ["hill", "swamp", "urban"],
+			"familiar": true,
+			"damageTags": ["P"],
+			"miscTags": ["MW"],
+			"hasFluffImages": true,
+			"token": {
+				"name": "Raven",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Nova",
+				"source": "MM",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "external",
+							"url": "https://bernheim.org/wp-content/uploads/2018/10/cardinal1.jpg"
+						}
+					}
+				],
+				"entries": [
+					"Aroz's familiar - a large, raven-sized summer cardinal."
+				]
+			}
 		}
 	]
 }
