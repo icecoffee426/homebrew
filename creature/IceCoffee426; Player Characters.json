@@ -639,8 +639,8 @@
 				{
 					"name": "Sentinel Familiar",
 					"entries": [
-						"While Nova is perched on your shoulder, you gain a bonus to your  Perception equal to your Charisma modifier. While perched on your shoulder, the raven can’t be targeted by any attack or other harmful effect; only you can cast spells on it; it can’t take damage; and it is incapacitated.",
-						"You can see through Nova's eyes and hear what she hears while she is within 100 feet of you. In combat, you control how Nova acts. If she is slain by a creature, you gain advantage on all attack rolls against the killer for the next 24 hours. While Nova is within 100 feet of you, she can awaken you from sleep as a bonus action. Nova vanishes when she dies, if you die, or if the two of you are separated by more than 5 miles (you can resummon her using your Find Familiar ritual spell at the end of a short or long rest)."
+						"While Nova is perched on your shoulder, you gain a bonus to your  Perception equal to your Charisma modifier. While perched on your shoulder, she can't be targeted by any attack or other harmful effect; only you can cast spells on her; she can't take damage and is incapacitated.",
+						"You can see through Nova's eyes and hear what she hears while she is within 100 feet of you. In combat, you control how Nova acts. If she is slain by a creature, you gain advantage on the next attack roll against the killer. While Nova is within 100 feet of you, she can awaken you from sleep as a bonus action. Nova vanishes when she dies, if you die, or if the two of you are separated by more than 5 miles (you can resummon her using your Find Familiar ritual spell at the end of a short or long rest)."
 					]
 				}
 			],
@@ -654,7 +654,7 @@
 				{
 					"name": "Claw",
 					"entries": [
-						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}1 piercing damage (target makes a {@dc 10} dexterity saving throw or is blidned for one turn."
+						"{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}1 piercing damage (target makes a {@dc 10} dexterity saving throw or is blidned for one turn)."
 					]
 				}
 			],
