@@ -24,10 +24,9 @@
 			},
 			"alignment": ["C", "E"],
 			"ac": [
-				13,
 				{
 					"ac": 16,
-					"condition": "with {@spell mage armor}"
+					"condition": "with {@spell Mage Armor}"
 				}
 			],
 			"hp": {
@@ -165,11 +164,11 @@
 			},
 			"alignment": ["L", "E"],
 			"ac": [
-				16,
 				{
 					"ac": 19,
-					"from": ["{@item Studded Leather Armor|PHB}"],
-					"condition": "with {@spell mage armor}",
+					"from": [
+						"{@item Studded Leather Armor|PHB} and {@spell Mage Armor}"
+					],
 					"braces": true
 				}
 			],
