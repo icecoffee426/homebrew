@@ -310,7 +310,7 @@
 				{
 					"name": "3 Sorcery Points of Metamagic (Costs 3 Actions)",
 					"entries": [
-						"Nelar can use {@optfeature Subtle Spell|PHB} (1SP) or {@optfeature Heightened Spell|PHB} (3SP) as a Legendary Action on his turn. Once the Sorcery Points are spend, this Legendary Action cannot be used again."
+						"Nelar can use {@optfeature Subtle Spell|PHB} (1SP) or {@optfeature Heightened Spell|PHB} (3SP) as a Legendary Action on his turn. Once the Sorcery Points are spent, this Legendary Action cannot be used again."
 					]
 				},
 				{
