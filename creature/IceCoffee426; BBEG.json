@@ -1,0 +1,237 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "BalochBBEG",
+				"abbreviation": "BBBEG",
+				"full": "Baloch Big Bad Evil Guy",
+				"version": "1.0.0",
+				"authors": ["IceCoffee426"],
+				"convertedBy": ["IceCoffee426"]
+			}
+		],
+		"dateAdded": 1711757098,
+		"dateLastModified": 1711757098
+	},
+	"monster": [
+		{
+			"name": "Nelar Autumell",
+			"source": "BalochBBEG",
+			"size": ["M"],
+			"type": {
+				"type": "humanoid",
+				"tags": ["elf"]
+			},
+			"alignment": ["L", "E"],
+			"ac": [
+				16,
+				{
+					"ac": 19,
+					"from": ["{@item Studded Leather Armor|PHB}"],
+					"condition": "with {@spell mage armor}",
+					"braces": true
+				}
+			],
+			"hp": {
+				"average": 55,
+				"formula": "10d8 + 10"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 9,
+			"dex": 18,
+			"con": 12,
+			"int": 18,
+			"wis": 13,
+			"cha": 12,
+			"skill": {
+				"arcana": "+7",
+				"deception": "+5",
+				"perception": "+5",
+				"stealth": "+8"
+			},
+			"senses": ["darkvision 120 ft."],
+			"passive": 15,
+			"languages": ["Ancient", "Common", "Undercommon"],
+			"cr": "10",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Nelar's innate spellcasting ability is Charisma (spell save {@dc 13}). He can innately cast the following spells, requiring no material components:"
+					],
+					"will": ["{@spell dancing lights}"],
+					"daily": {
+						"1e": [
+							"{@spell darkness}",
+							"{@spell faerie fire}",
+							"{@spell levitate} (self only)"
+						]
+					},
+					"ability": "cha"
+				},
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Nelar is a 12th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 16}, {@hit 8} to hit with spell attacks). Nelar has the following wizard spells prepared:"
+					],
+					"spells": {
+						"0": {
+							"spells": [
+								"{@spell mage hand}",
+								"{@spell minor illusion}",
+								"{@spell poison spray}",
+								"{@spell ray of frost}"
+							]
+						},
+						"1": {
+							"slots": 4,
+							"spells": [
+								"{@spell mage armor}",
+								"{@spell magic missile}",
+								"{@spell shield}",
+								"{@spell witch bolt}"
+							]
+						},
+						"2": {
+							"slots": 3,
+							"spells": [
+								"{@spell detect thoughts}",
+								"{@spell misty step}",
+								"{@spell suggestion}"
+							]
+						},
+						"3": {
+							"slots": 3,
+							"spells": [
+								"{@spell fly}",
+								"{@spell lightning bolt}"
+							]
+						},
+						"4": {
+							"slots": 3,
+							"spells": [
+								"{@spell Evard's black tentacles}",
+								"{@spell greater invisibility}"
+							]
+						},
+						"5": {
+							"slots": 2,
+							"spells": [
+								"{@spell cloudkill}",
+								"{@spell modify memory}"
+							]
+						},
+						"6": {
+							"slots": 1,
+							"spells": ["{@spell mass suggestion}"]
+						}
+					},
+					"ability": "int"
+				}
+			],
+			"trait": [
+				{
+					"name": "Fey Ancestry",
+					"entries": [
+						"Nelar has advantage on saving throws against being {@condition charmed}, and magic can't put him to sleep."
+					]
+				},
+				{
+					"name": "Legendary Resistance (3/Day)",
+					"entries": [
+						"If the fomorian fails a saving throw, it can choose to succeed instead."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Staff",
+					"entries": [
+						"{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) bludgeoning damage, or 6 ({@damage 1d8 + 2}) bludgeoning damage if used with two hands, plus 3 ({@damage 1d6}) poison damage."
+					]
+				},
+				{
+					"name": "Summon Demon (1/Day)",
+					"entries": [
+						"Nelar magically summons a {@creature quasit}, or attempts to summon a {@creature shadow demon} with a {@chance 50|50 percent|50% summoning chance} chance of success. The summoned demon appears in an unoccupied space within 60 feet of its summoner, acts as an ally of its summoner, and can't summon other demons. It remains for 10 minutes, until it or its summoner dies, or until its summoner dismisses it as an action."
+					]
+				}
+			],
+			"legendaryActions": 3,
+			"legendary": [
+				{
+					"name": "3 Sorcery Points of Metamagic (Costs 3 Actions)",
+					"entries": [
+						"Nelar can use {@optfeature Subtle Spell|PHB} (1SP) or {@optfeature Heightened Spell|PHB} (3SP) as a Legendary Action on his turn. Once the Sorcery Points are spend, this Legendary Action cannot be used again."
+					]
+				},
+				{
+					"name": "Psychic Torrent (Costs 2 Actions)",
+					"entries": [
+						"Nelar targets a creature he can see within 120 feet and begins sending waves of psychic energy into its mind. The target must make a DC 16 Intelligence check. On a failed save, the target takes 22 ({@damage 4d10}) psychic damage and is under the effects of the confusion spell for 1 minute. On a successful save, the target takes half damage and has disadvantage on all attack rolls and saving throws until the end of its next turn. A confused creature can make a DC 16 Wisdom saving throw at the end of each of its turn, ending the effect on itself on a success."
+					]
+				},
+				{
+					"name": "Cast a Cantrip",
+					"entries": ["Nelar casts a cantrip."]
+				}
+			],
+			"environment": ["underdark"],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/drow-mage.mp3"
+			},
+			"traitTags": ["Fey Ancestry", "Sunlight Sensitivity"],
+			"senseTags": ["SD"],
+			"languageTags": ["E", "U"],
+			"damageTags": ["B", "I"],
+			"damageTagsSpell": ["B", "C", "F", "I", "L", "O", "P", "S"],
+			"spellcastingTags": ["CW", "I"],
+			"miscTags": ["MW"],
+			"conditionInflictSpell": ["invisible", "restrained"],
+			"savingThrowForcedSpell": ["constitution", "dexterity"],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Drow Mage",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Nelar Autumell",
+				"source": "MM",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Drow Mage.webp"
+						}
+					}
+				],
+				"entries": [
+					{
+						"name": "Nelar Autumell",
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"This man's background and motivations are a mystery for the moment."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		}
+	]
+}
