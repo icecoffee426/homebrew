@@ -119,9 +119,9 @@
 							{
 								"type": "entries",
 								"entries": [
-									"Though most imps are smalL weak little devils, some of them are able to distinguish themselves enough through their service to greater devils that they are transformed into a larger, stronger kind of imp known as a dire imp."
-									"Elite Among Impkind: Only the most exceptional of service can qualify an imp to become a dire imp. They must demonstrate extreme cunning as well as flawless loyalty to the devils that they serve. Dire imps are seen with equal amounts of respect and envy by the regular imps that populate the Nine Hells, who both serve the dire imps and constantly plot to usurp their positions."
-									"Archdevil Servants: The greatest honor bestowed on an imp that becomes a dire imp is the chance to serve in the employ of an archdevil Most archdevils make use of several dire imps at any given time, using them as basic spies, servants, and messengers just as lesser devils use regular imps. Dire imps mean nothing to an archdevil and they are likely to be replaced at their first mistake."
+									"Though most imps are smalL weak little devils, some of them are able to distinguish themselves enough through their service to greater devils that they are transformed into a larger, stronger kind of imp known as a dire imp.",
+									"Elite Among Impkind: Only the most exceptional of service can qualify an imp to become a dire imp. They must demonstrate extreme cunning as well as flawless loyalty to the devils that they serve. Dire imps are seen with equal amounts of respect and envy by the regular imps that populate the Nine Hells, who both serve the dire imps and constantly plot to usurp their positions.",
+									"Archdevil Servants: The greatest honor bestowed on an imp that becomes a dire imp is the chance to serve in the employ of an archdevil Most archdevils make use of several dire imps at any given time, using them as basic spies, servants, and messengers just as lesser devils use regular imps. Dire imps mean nothing to an archdevil and they are likely to be replaced at their first mistake.",
 									"Summoning Dire Imps: Whether driven by pride or by ignorance, fiendish warlocks or wizards sometimes attempt to command the aid of dire imps after learning of their existence, conjuring them to the Material Plane with binding magic just as they would a regular imp. Yet dire imps are not merely powerfuL but cunning, and they greatly resent serving mortals in the way lesser imps do. Summoners who make this mistake rarely survive it."
 								]
 							}
@@ -142,22 +142,13 @@
 		{
 			"name": "Cambion",
 			"source": "BalochA1Encounters",
-			"size": [
-				"M"
-			],
+			"size": ["M"],
 			"type": "fiend",
-			"alignment": [
-				"L",
-				"NX",
-				"C",
-				"E"
-			],
+			"alignment": ["L", "NX", "C", "E"],
 			"ac": [
 				{
 					"ac": 16,
-					"from": [
-						"Fiendish Blessing"
-					]
+					"from": ["Fiendish Blessing"]
 				}
 			],
 			"hp": {
@@ -186,9 +177,7 @@
 				"perception": "+3",
 				"stealth": "+5"
 			},
-			"senses": [
-				"darkvision 60 ft."
-			],
+			"senses": ["darkvision 60 ft."],
 			"passive": 13,
 			"resist": [
 				"cold",
@@ -196,20 +185,12 @@
 				"lightning",
 				"poison",
 				{
-					"resist": [
-						"bludgeoning",
-						"piercing",
-						"slashing"
-					],
+					"resist": ["bludgeoning", "piercing", "slashing"],
 					"note": "from nonmagical attacks",
 					"cond": true
 				}
 			],
-			"languages": [
-				"Abyssal",
-				"Common",
-				"Infernal"
-			],
+			"languages": ["Abyssal", "Common", "Infernal"],
 			"cr": "3",
 			"spellcasting": [
 				{
@@ -219,9 +200,7 @@
 						"The cambion's spellcasting ability is Charisma (spell save {@dc 12}). The cambion can innately cast the following spells, requiring no material components:"
 					],
 					"daily": {
-						"1": [
-							"{@spell plane shift} (self only)"
-						],
+						"1": ["{@spell plane shift} (self only)"],
 						"3e": [
 							"{@spell alter self}",
 							"{@spell command}",
@@ -265,58 +244,23 @@
 					]
 				}
 			],
-			"environment": [
-				"urban"
-			],
+			"environment": ["urban"],
 			"soundClip": {
 				"type": "external",
 				"url": "https://5e.tools/audio/bestiary/cambion.mp3"
 			},
-			"attachedItems": [
-				"spear|phb"
-			],
-			"senseTags": [
-				"D"
-			],
-			"actionTags": [
-				"Multiattack"
-			],
-			"languageTags": [
-				"AB",
-				"C",
-				"I"
-			],
-			"damageTags": [
-				"F",
-				"P"
-			],
-			"damageTagsSpell": [
-				"B",
-				"P",
-				"S"
-			],
-			"spellcastingTags": [
-				"I"
-			],
-			"miscTags": [
-				"MLW",
-				"MW",
-				"RW",
-				"THW"
-			],
-			"conditionInflict": [
-				"charmed"
-			],
-			"conditionInflictSpell": [
-				"prone"
-			],
-			"savingThrowForced": [
-				"wisdom"
-			],
-			"savingThrowForcedSpell": [
-				"charisma",
-				"wisdom"
-			],
+			"attachedItems": ["spear|phb"],
+			"senseTags": ["D"],
+			"actionTags": ["Multiattack"],
+			"languageTags": ["AB", "C", "I"],
+			"damageTags": ["F", "P"],
+			"damageTagsSpell": ["B", "P", "S"],
+			"spellcastingTags": ["I"],
+			"miscTags": ["MLW", "MW", "RW", "THW"],
+			"conditionInflict": ["charmed"],
+			"conditionInflictSpell": ["prone"],
+			"savingThrowForced": ["wisdom"],
+			"savingThrowForcedSpell": ["charisma", "wisdom"],
 			"hasFluff": true,
 			"hasFluffImages": true,
 			"token": {
@@ -330,7 +274,12 @@
 					{
 						"type": "entries",
 						"entries": [
-							"Saeth is a cambion in disguise working for the three hags running the Temple of Sosan. His motivations and real master are unknown."
+							{
+								"type": "entries",
+								"entries": [
+									"Saeth is a cambion in disguise working for the three hags running the Temple of Sosan. His motivations and real master are unknown."
+								]
+							}
 						]
 					}
 				],
