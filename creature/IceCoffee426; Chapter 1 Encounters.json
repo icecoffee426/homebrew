@@ -2,9 +2,9 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "BalochCh1Encounters",
-				"abbreviation": "CH1E",
-				"full": "Baloch Chapter 1 Encounters",
+				"json": "BalochA1Encounters",
+				"abbreviation": "BA1E",
+				"full": "Baloch Act 1 Encounters",
 				"version": "1.0.0",
 				"authors": ["IceCoffee426"],
 				"convertedBy": ["IceCoffee426"]
@@ -15,8 +15,339 @@
 	},
 	"monster": [
 		{
+			"name": "Dire Imp",
+			"source": "BalochA1Encounters",
+			"size": ["T"],
+			"type": {
+				"type": "fiend",
+				"tags": ["devil"]
+			},
+			"alignment": ["L", "E"],
+			"ac": [14],
+			"hp": {
+				"average": 31,
+				"formula": "5d8 + 9"
+			},
+			"speed": {
+				"walk": 20,
+				"fly": 40
+			},
+			"str": 6,
+			"dex": 18,
+			"con": 14,
+			"int": 10,
+			"wis": 12,
+			"cha": 14,
+			"skill": {
+				"deception": "+4",
+				"insight": "+3",
+				"persuasion": "+4",
+				"stealth": "+5"
+			},
+			"senses": ["darkvision 120 ft."],
+			"passive": 11,
+			"resist": [
+				"fire",
+				"poison",
+				"cold",
+				{
+					"resist": ["bludgeoning", "piercing", "slashing"],
+					"note": "from nonmagical attacks not made with silvered weapons",
+					"cond": true
+				}
+			],
+			"languages": ["Infernal", "Common"],
+			"cr": "3",
+			"trait": [
+				{
+					"name": "Shapechanger",
+					"entries": [
+						"The imp can use its action to polymorph into a beast form that resembles a rat (speed 20 ft.), a raven (20 ft., fly 60 ft.), or a spider (20 ft., climb 20 ft.), or back into its true form. Its statistics are the same in each form, except for the speed changes noted. Any equipment it is wearing or carrying isn't transformed. It reverts to its true form if it dies."
+					]
+				},
+				{
+					"name": "Devil's Sight",
+					"entries": [
+						"Magical darkness doesn't impede the imp's darkvision."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Claws (True Form Only)",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage, +3 fire damage"
+					]
+				},
+				{
+					"name": "Sting (Bite in Beast Form)",
+					"entries": [
+						"{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage, and the target must make a {@dc 11} Constitution saving throw, taking 10 ({@damage 3d6}) poison damage on a failed save, or half as much damage on a successful one."
+					]
+				},
+				{
+					"name": "Invisibility",
+					"entries": [
+						"The imp magically turns {@condition invisible} until it attacks, or until its {@status concentration} ends (as if {@status concentration||concentrating} on a spell). Any equipment the imp wears or carries is {@condition invisible} with it."
+					]
+				}
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/imp.mp3"
+			},
+			"traitTags": ["Devil's Sight", "Magic Resistance", "Shapechanger"],
+			"senseTags": ["SD"],
+			"languageTags": ["C", "I"],
+			"damageTags": ["I", "P"],
+			"miscTags": ["MW"],
+			"conditionInflict": ["invisible"],
+			"savingThrowForced": ["constitution"],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Imp",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Dire Imp",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									"Though most imps are smalL weak little devils, some of them are able to distinguish themselves enough through their service to greater devils that they are transformed into a larger, stronger kind of imp known as a dire imp."
+									"Elite Among Impkind: Only the most exceptional of service can qualify an imp to become a dire imp. They must demonstrate extreme cunning as well as flawless loyalty to the devils that they serve. Dire imps are seen with equal amounts of respect and envy by the regular imps that populate the Nine Hells, who both serve the dire imps and constantly plot to usurp their positions."
+									"Archdevil Servants: The greatest honor bestowed on an imp that becomes a dire imp is the chance to serve in the employ of an archdevil Most archdevils make use of several dire imps at any given time, using them as basic spies, servants, and messengers just as lesser devils use regular imps. Dire imps mean nothing to an archdevil and they are likely to be replaced at their first mistake."
+									"Summoning Dire Imps: Whether driven by pride or by ignorance, fiendish warlocks or wizards sometimes attempt to command the aid of dire imps after learning of their existence, conjuring them to the Material Plane with binding magic just as they would a regular imp. Yet dire imps are not merely powerfuL but cunning, and they greatly resent serving mortals in the way lesser imps do. Summoners who make this mistake rarely survive it."
+								]
+							}
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Imp.webp"
+						}
+					}
+				]
+			}
+		},
+		{
+			"name": "Cambion",
+			"source": "BalochA1Encounters",
+			"size": [
+				"M"
+			],
+			"type": "fiend",
+			"alignment": [
+				"L",
+				"NX",
+				"C",
+				"E"
+			],
+			"ac": [
+				{
+					"ac": 16,
+					"from": [
+						"Fiendish Blessing"
+					]
+				}
+			],
+			"hp": {
+				"average": 65,
+				"formula": "10d8 + 20"
+			},
+			"speed": {
+				"walk": 30,
+				"fly": 60
+			},
+			"str": 18,
+			"dex": 16,
+			"con": 14,
+			"int": 14,
+			"wis": 12,
+			"cha": 14,
+			"save": {
+				"str": "+6",
+				"con": "+4",
+				"int": "+4",
+				"cha": "+5"
+			},
+			"skill": {
+				"deception": "+5",
+				"intimidation": "+5",
+				"perception": "+3",
+				"stealth": "+5"
+			},
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"passive": 13,
+			"resist": [
+				"cold",
+				"fire",
+				"lightning",
+				"poison",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from nonmagical attacks",
+					"cond": true
+				}
+			],
+			"languages": [
+				"Abyssal",
+				"Common",
+				"Infernal"
+			],
+			"cr": "3",
+			"spellcasting": [
+				{
+					"name": "Innate Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"The cambion's spellcasting ability is Charisma (spell save {@dc 12}). The cambion can innately cast the following spells, requiring no material components:"
+					],
+					"daily": {
+						"1": [
+							"{@spell plane shift} (self only)"
+						],
+						"3e": [
+							"{@spell alter self}",
+							"{@spell command}",
+							"{@spell detect magic}"
+						]
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Fiendish Blessing",
+					"entries": [
+						"The AC of the cambion includes its Charisma bonus."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Multiattack",
+					"entries": [
+						"The cambion makes two melee attacks or uses its Fire Ray twice."
+					]
+				},
+				{
+					"name": "Spear",
+					"entries": [
+						"{@atk mw,rw} {@hit 5} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage, or 7 ({@damage 1d8 + 3}) piercing damage if used with two hands to make a melee attack, plus 3 ({@damage 1d6}) fire damage."
+					]
+				},
+				{
+					"name": "Fire Ray",
+					"entries": [
+						"{@atk rs} {@hit 5} to hit, range 120 ft., one target. {@h}7 ({@damage 2d6}) fire damage."
+					]
+				},
+				{
+					"name": "Fury of the Nine",
+					"entries": [
+						"As a bonus action, the cambion chooses another creature that can see or hear it within 120 feet. That creature gains advantage on all attack rolls and saving throws for the next minute or until the cambion uses this ability again."
+					]
+				}
+			],
+			"environment": [
+				"urban"
+			],
+			"soundClip": {
+				"type": "external",
+				"url": "https://5e.tools/audio/bestiary/cambion.mp3"
+			},
+			"attachedItems": [
+				"spear|phb"
+			],
+			"senseTags": [
+				"D"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"languageTags": [
+				"AB",
+				"C",
+				"I"
+			],
+			"damageTags": [
+				"F",
+				"P"
+			],
+			"damageTagsSpell": [
+				"B",
+				"P",
+				"S"
+			],
+			"spellcastingTags": [
+				"I"
+			],
+			"miscTags": [
+				"MLW",
+				"MW",
+				"RW",
+				"THW"
+			],
+			"conditionInflict": [
+				"charmed"
+			],
+			"conditionInflictSpell": [
+				"prone"
+			],
+			"savingThrowForced": [
+				"wisdom"
+			],
+			"savingThrowForcedSpell": [
+				"charisma",
+				"wisdom"
+			],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Cambion",
+				"source": "MM"
+			},
+			"fluff": {
+				"name": "Cambion",
+				"source": "MM",
+				"entries": [
+					{
+						"type": "entries",
+						"entries": [
+							"Saeth is a cambion in disguise working for the three hags running the Temple of Sosan. His motivations and real master are unknown."
+						]
+					}
+				],
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/MM/Cambion.webp"
+						}
+					}
+				]
+			}
+		},
+		{
 			"name": "Mysterious Thug",
-			"source": "BalochCh1Encounters",
+			"source": "BalochA1Encounters",
 			"basicRules": true,
 			"size": ["M"],
 			"type": {
@@ -100,7 +431,7 @@
 		},
 		{
 			"name": "Mysterious Assassin",
-			"source": "BalochCh1Encounters",
+			"source": "BalochA1Encounters",
 			"size": ["M"],
 			"type": {
 				"type": "humanoid",
@@ -178,7 +509,7 @@
 							{
 								"type": "entries",
 								"entries": [
-									"The mysterious trickster who was sent to cause havoc at the Baloch University performance bar. Clearly from the Northern kingdoms, although it is unknown what his motivations were or who hired him."
+									"The mysterious trickster who was sent to cause havoc at the Baloch University performance bar. Clearly from the Northern kingdoms, although it is unknown what his motivations were or who hired him. His name was Henry!"
 								]
 							}
 						]
