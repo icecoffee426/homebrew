@@ -9,6 +9,10 @@
 	},
 	"IceCoffee426; Chapter 1 Encounters.json": {
 		"n": ["Baloch Chapter 1 Encounters"],
-		"a": ["CH1E"]
+		"a": ["BA1E"]
+	},
+	"IceCoffee426; Chapter 1 Encounters.json": {
+		"n": ["Baloch Bosses"],
+		"a": ["BBoss"]
 	}
 }

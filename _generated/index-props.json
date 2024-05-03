@@ -1,7 +1,8 @@
 {
 	"monster": {
 		"creature/IceCoffee426; Player Characters.json": "creature",
-		"creature/IceCoffee426; Chapter 1 Encounters.json": "creature"
+		"creature/IceCoffee426; Chapter 1 Encounters.json": "creature",
+		"creature/IceCoffee426; Bosses.json": "creature"
 	},
 	"adventure": {
 		"adventure/IceCoffee426; Shamayilm Chronicles.json": "adventure"
