@@ -2,9 +2,9 @@
 	"_meta": {
 		"sources": [
 			{
-				"json": "BalochBBEG",
-				"abbreviation": "BBBEG",
-				"full": "Baloch Big Bad Evil Guy",
+				"json": "BalochBosses",
+				"abbreviation": "BBoss",
+				"full": "Baloch Bosses",
 				"version": "1.0.0",
 				"authors": ["IceCoffee426"],
 				"convertedBy": ["IceCoffee426"]
@@ -15,8 +15,149 @@
 	},
 	"monster": [
 		{
+			"name": "Najeeb Lakani",
+			"source": "BalochBosses",
+			"size": ["M"],
+			"type": {
+				"type": "humanoid",
+				"tags": ["human"]
+			},
+			"alignment": ["C", "E"],
+			"ac": [
+				13,
+				{
+					"ac": 16,
+					"condition": "with {@spell mage armor}"
+				}
+			],
+			"hp": {
+				"average": 81,
+				"formula": "14d6+32"
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 8,
+			"dex": 16,
+			"con": 16,
+			"int": 10,
+			"wis": 12,
+			"cha": 18,
+			"save": {
+				"con": "+7",
+				"cha": "+8"
+			},
+			"skill": {
+				"deception": "+8",
+				"perception": "+5",
+				"stealth": "+7"
+			},
+			"passive": 15,
+			"languages": ["Abyssal", "Common"],
+			"cr": "9",
+			"spellcasting": [
+				{
+					"name": "Spellcasting",
+					"type": "spellcasting",
+					"headerEntries": [
+						"Najeeb is an 10th-level spellcaster. His spellcasting ability is Charisma (spell save {@dc 16}, {@hit 8} to hit with spell attacks). Najeeb can cast the following spells:"
+					],
+					"will": [
+						"{@spell fire bolt}",
+						"{@spell mage hand}",
+						"{@spell minor illusion}",
+						"{@spell mold earth}",
+						"{@spell prestidigitation}",
+						"{@spell shocking grasp}"
+					],
+					"daily": {
+						"1e": [
+							"{@spell absorb elements}",
+							"{@spell greater invisibility}",
+							"{@spell mage armor}",
+							"{@spell Maximilian's earthen grasp}",
+							"{@spell synaptic static}",
+							"{@spell polymorph}",
+							"{@spell prismatic spray}",
+							"{@spell mass suggestion}"
+						],
+						"3e": [
+							"{@spell chaos bolt}",
+							"{@spell shield}",
+							"{@spell fireball"
+						]
+					},
+					"ability": "cha"
+				}
+			],
+			"trait": [
+				{
+					"name": "Metamagic (3/day)",
+					"entries": [
+						"Najeeb can use any of {@optfeature Subtle Spell|PHB}, {@optfeature Heightened Spell|PHB}, {@optfeature Twinned Spell|PHB} three times per day."
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Dagger",
+					"entries": [
+						"{@atk mw,rw} {@hit 7} to hit, reach 5 ft. or 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage."
+					]
+				}
+			],
+			"environment": ["city"],
+			"senseTags": ["SD"],
+			"languageTags": ["E", "U"],
+			"damageTags": ["B", "I"],
+			"damageTagsSpell": ["B", "C", "F", "I", "L", "O", "P", "S"],
+			"spellcastingTags": ["CW", "I"],
+			"miscTags": ["MW"],
+			"conditionInflictSpell": ["invisible", "restrained"],
+			"savingThrowForcedSpell": ["constitution", "dexterity"],
+			"hasFluff": true,
+			"hasFluffImages": true,
+			"token": {
+				"name": "Draconian Mage",
+				"source": "FTD"
+			},
+			"fluff": {
+				"name": "Najeeb Lakani",
+				"source": "MM",
+				"images": [
+					{
+						"type": "image",
+						"href": {
+							"type": "internal",
+							"path": "bestiary/FTD/Draconian Mage.webp"
+						},
+						"credit": "Clint Cearley"
+					}
+				],
+				"entries": [
+					{
+						"name": "Najeeb Lakani",
+						"type": "section",
+						"entries": [
+							{
+								"type": "entries",
+								"entries": [
+									{
+										"type": "entries",
+										"entries": [
+											"Najeeb serves the lord Nelar in hisendeavours. His background and motivations are a mystery for the moment."
+										]
+									}
+								]
+							}
+						]
+					}
+				]
+			}
+		},
+		{
 			"name": "Nelar Autumell",
-			"source": "BalochBBEG",
+			"source": "BalochBosses",
 			"size": ["M"],
 			"type": {
 				"type": "humanoid",
@@ -33,8 +174,8 @@
 				}
 			],
 			"hp": {
-				"average": 55,
-				"formula": "10d8 + 10"
+				"average": 65,
+				"formula": "10d8 + 20"
 			},
 			"speed": {
 				"walk": 30
@@ -45,6 +186,10 @@
 			"int": 18,
 			"wis": 13,
 			"cha": 12,
+			"save": {
+				"int": "+8",
+				"wis": "+5"
+			},
 			"skill": {
 				"arcana": "+7",
 				"deception": "+5",
@@ -143,7 +288,7 @@
 				{
 					"name": "Legendary Resistance (3/Day)",
 					"entries": [
-						"If the fomorian fails a saving throw, it can choose to succeed instead."
+						"If Nelar fails a saving throw, he can choose to succeed instead."
 					]
 				}
 			],
