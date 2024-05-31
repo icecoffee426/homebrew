@@ -72,9 +72,9 @@
 					"daily": {
 						"3e": ["{@spell chaos bolt|XGE}", "{@spell shield}"],
 						"1e": [
-							"{@spell absorb elements|XGE}",
 							"{@spell mage armor}",
 							"{@spell Maximilian's earthen grasp|XGE}",
+							"{@spell thunderstep|XGE}",
 							"{@spell greater invisibility}",
 							"{@spell synaptic static|XGE}",
 							"{@spell mass suggestion}",
@@ -320,10 +320,6 @@
 				}
 			],
 			"environment": ["underdark"],
-			"soundClip": {
-				"type": "external",
-				"url": "https://5e.tools/audio/bestiary/drow-mage.mp3"
-			},
 			"traitTags": ["Fey Ancestry", "Sunlight Sensitivity"],
 			"senseTags": ["SD"],
 			"languageTags": ["E", "U"],
