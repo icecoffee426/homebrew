@@ -65,25 +65,20 @@
 						"{@spell fire bolt}",
 						"{@spell mage hand}",
 						"{@spell minor illusion}",
-						"{@spell mold earth}",
+						"{@spell mold earth|XGE}",
 						"{@spell prestidigitation}",
 						"{@spell shocking grasp}"
 					],
 					"daily": {
+						"3e": ["{@spell chaos bolt|XGE}", "{@spell shield}"],
 						"1e": [
-							"{@spell absorb elements}",
-							"{@spell greater invisibility}",
+							"{@spell absorb elements|XGE}",
 							"{@spell mage armor}",
-							"{@spell Maximilian's earthen grasp}",
-							"{@spell synaptic static}",
-							"{@spell polymorph}",
-							"{@spell prismatic spray}",
-							"{@spell mass suggestion}"
-						],
-						"3e": [
-							"{@spell chaos bolt}",
-							"{@spell shield}",
-							"{@spell fireball"
+							"{@spell Maximilian's earthen grasp|XGE}",
+							"{@spell greater invisibility}",
+							"{@spell synaptic static|XGE}",
+							"{@spell mass suggestion}",
+							"{@spell prismatic spray}"
 						]
 					},
 					"ability": "cha"
