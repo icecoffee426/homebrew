@@ -60,7 +60,7 @@
 				},
 				{
 					"name": "Tool Proficiency",
-					"entries": ["{@item Gaming Set|PHB} {@dice 1d20+5|+5}"]
+					"entries": ["{@item Gaming Set|PHB} {@dice 1d20+6|+6}"]
 				},
 				{
 					"name": "{@classFeature Arcane Recovery|Wizard|PHB|1}",
@@ -93,7 +93,7 @@
 										"{@spell Dissonant Whispers|PHB}",
 										"{@spell Expeditious Retreat|PHB}",
 										"{@spell Gift of Alacrity|EGW} (Ritual)",
-										"{@spell Ice Knife|PHB}",
+										"{@spell Ice Knife|XGE}",
 										"{@spell Magic Missile|PHB}",
 										"{@spell Magnify Gravity|EGW}",
 										"{@spell Ray of Sickness|PHB}",
@@ -231,7 +231,7 @@
 									"spells": [
 										"{@spell Shield|PHB}",
 										"{@spell Unseen Servant|PHB}",
-										"{@spell Absorb Elements |PHB}",
+										"{@spell Absorb Elements|XGE}",
 										"{@spell Thunderwave |PHB}"
 									]
 								}
@@ -306,11 +306,11 @@
 				{
 					"name": "Pact Boon: {@optfeature Pact of the Chain|PHB}",
 					"entries": [
-						"Summons a summer cardinal with {@creature raven|PHB} stats. Vanishes if it dies, you die or you are separated by more than 5 miles."
+						"Summons a summer cardinal with {@creature raven|MM} stats. Vanishes if it dies, you die or you are separated by more than 5 miles."
 					]
 				},
 				{
-					"name": "Invocation: {@optfeature Agonising Blast|PHB}",
+					"name": "Invocation: {@optfeature Agonizing Blast|PHB}",
 					"entries": []
 				},
 				{
@@ -553,14 +553,12 @@
 				{
 					"name": "Tool Proficiency",
 					"entries": [
-						"{@item Musical Instruments|PHB} {@dice 1d20+5|+5}, {@item Disguise Kit|PHB} {@dice 1d20+5|+5}"
+						"{@item Musical Instrument|PHB} {@dice 1d20+5|+5}, {@item Disguise Kit|PHB} {@dice 1d20+5|+5}"
 					]
 				},
 				{
 					"name": "{@classFeature Sneak Attack|Rogue|PHB|1|PHB}",
-					"entries": [
-						"Once per turn, deal an extra {@dice 2d6} damage when hitting a target with a weapon attack which has advantage on the attack roll, or when the target of the attack is within 5 feet of an ally that isn't {@condition incapacitated} (but does not have disadvantage on the attack roll)."
-					]
+					"entries": []
 				},
 				{
 					"name": "{@subclassFeature Psi-Bolstered Knack|Rogue|TCE|Soulknife|TCE|3}",
@@ -569,6 +567,18 @@
 				{
 					"name": "{@subclassFeature Psychic Whispers|Rogue|TCE|Soulknife|TCE|3}",
 					"entries": []
+				},
+				{
+					"name": "Mock the Weak-Minded",
+					"entries": [
+						"If you hit with an attack using your psychic blade, in addition to the damage, you can unleash a string of insults at the creature by expending 2 psionic energy dice. If the target can hear you (though it need not understand you), it must succeed on an Intelligence saving throw or have disadvantage on the next attack roll it makes before the end of its next turn. A deafened creature automatically succeeds on the save."
+					]
+				},
+				{
+					"name": "Whispers of Terror",
+					"entries": [
+						"If you hit with an attack using your psychic blade, in addition to the damage, you can whisper a discordant melody to that creature, wracking it with terrible pain by expending 2 psionic energy dice. The target must make an Wisdom saving throw. On a failed save, it must immediately use its reaction, if available, to move as far as its speed allows away from you. The creature doesn't move into obviously dangerous ground, such as a fire or a pit. A deafened creature automatically succeeds on the save."
+					]
 				}
 			],
 			"action": [
