@@ -16,7 +16,7 @@
 	"monster": [
 		{
 			"name": "Erza Florian Erin'ail",
-			"level": 3,
+			"level": 4,
 			"source": "BalochPCs",
 			"size": ["M"],
 			"type": "Part-Elf Wizard (Chronurgy Magic)",
@@ -28,7 +28,7 @@
 			],
 			"hp": {
 				"formula": "6 per level",
-				"average": 20
+				"average": 26
 			},
 			"speed": {
 				"walk": 35
@@ -36,17 +36,17 @@
 			"str": 10,
 			"dex": 12,
 			"con": 15,
-			"int": 17,
+			"int": 18,
 			"wis": 14,
 			"cha": 6,
 			"save": {
-				"int": "+5",
+				"int": "+6 ",
 				"wis": "+4"
 			},
 			"skill": {
-				"arcana": "+5",
-				"history": "+5",
-				"investigation": "+5",
+				"arcana": "+6",
+				"history": "+6",
+				"investigation": "+6",
 				"stealth": "+3"
 			},
 			"senses": ["Darkvision 60 ft.", "Passive Perception: 12"],
@@ -55,7 +55,7 @@
 				{
 					"name": "Initiative",
 					"entries": [
-						"{@dice 1d20+4|+4} ({@subclassFeature Temporal Awareness|Wizard|PHB|Chronurgy|EGW|2})"
+						"{@dice 1d20+5|+5} ({@subclassFeature Temporal Awareness|Wizard|PHB|Chronurgy|EGW|2})"
 					]
 				},
 				{
@@ -79,9 +79,10 @@
 							"spells": {
 								"0": {
 									"spells": [
-										"{@spell Sapping Sting|EGW}",
-										"{@spell Mending|PHB}",
-										"{@spell Message|PHB}"
+										"{@spell Message|PHB}",
+										"{@spell Minor Illusion|PHB}",
+										"{@spell Prestidigitation|PHB}",
+										"{@spell Sapping Sting|EGW}"
 									]
 								},
 								"1": {
@@ -89,20 +90,24 @@
 									"spells": [
 										"{@spell Comprehend Languages|PHB} (Ritual)",
 										"{@spell Detect Magic|PHB} (Ritual)",
-										"{@spell Tenser's Floating Disk|PHB} (Ritual)",
+										"{@spell Dissonant Whispers|PHB}",
+										"{@spell Expeditious Retreat|PHB}",
+										"{@spell Gift of Alacrity|EGW} (Ritual)",
 										"{@spell Ice Knife|PHB}",
-										"{@spell Magnify Gravity|EGW}",
 										"{@spell Magic Missile|PHB}",
-										"{@spell Shield|PHB} (Reaction)",
+										"{@spell Magnify Gravity|EGW}",
 										"{@spell Ray of Sickness|PHB}",
-										"{@spell Gift of Alacrity|EGW}"
+										"{@spell Silvery Barbs|SCC} (Reaction)",
+										"{@spell Tenser's Floating Disk|PHB} (Ritual)"
 									]
 								},
 								"2": {
 									"slots": 2,
 									"spells": [
-										"{@spell Scorching Ray|PHB}",
-										"{@spell Nathair's Mischief|FTD}"
+										"{@spell Dragon's Breath|XGE}",
+										"{@spell Misty Step|PHB}",
+										"{@spell Nathair's Mischief|FTD}",
+										"{@spell Scorching Ray|PHB}"
 									]
 								}
 							}
@@ -112,7 +117,7 @@
 				{
 					"name": "Unarmed Strike",
 					"entries": [
-						"{@atk mw} {@hit 0} to hit, reach 5 ft, one target. {@h} 1 bludgeoning damage"
+						"{@atk mw} {@hit 2} to hit, reach 5 ft, one target. {@h} 1 bludgeoning damage"
 					]
 				}
 			],
@@ -138,7 +143,7 @@
 		},
 		{
 			"name": "Aramil Nai'igal",
-			"level": 3,
+			"level": 4,
 			"source": "BalochPCs",
 			"size": ["M"],
 			"type": "High-Elf Fighter (Eldritch Knight)",
@@ -151,23 +156,23 @@
 			],
 			"hp": {
 				"formula": "8 per level",
-				"average": 28
+				"average": 36
 			},
 			"speed": {
 				"walk": 30
 			},
-			"str": 17,
+			"str": 18,
 			"dex": 12,
 			"con": 14,
 			"int": 14,
 			"wis": 10,
 			"cha": 8,
 			"save": {
-				"str": "+5",
+				"str": "+6",
 				"con": "+4"
 			},
 			"skill": {
-				"athletics": "+5",
+				"athletics": "+6",
 				"arcana": "+4",
 				"history": "+4",
 				"perception": "+2"
@@ -196,7 +201,7 @@
 				{
 					"name": "{@item Longsword|PHB}",
 					"entries": [
-						"{@atk mw} {@hit 5} to hit, reach 5 ft, one target. {@h} {@damage 1d8+3} (or or {@damage 1d10+3} if held in both hands) slashing damage, +2 damage if no weapon in offhand from {@optfeature Dueling|PHB})."
+						"{@atk mw} {@hit 6} to hit, reach 5 ft, one target. {@h} {@damage 1d8+3} (or or {@damage 1d10+3} if held in both hands) slashing damage, +2 damage if no weapon in offhand from {@optfeature Dueling|PHB})."
 					]
 				},
 				{
@@ -226,6 +231,7 @@
 									"spells": [
 										"{@spell Shield|PHB}",
 										"{@spell Unseen Servant|PHB}",
+										"{@spell Absorb Elements |PHB}",
 										"{@spell Thunderwave |PHB}"
 									]
 								}
@@ -257,7 +263,7 @@
 		},
 		{
 			"name": "Aroz Ravazi",
-			"level": 3,
+			"level": 4,
 			"source": "BalochPCs",
 			"size": ["M"],
 			"type": "Efreeti Dragonborn Warlock (Genie Patron)",
@@ -270,7 +276,7 @@
 			],
 			"hp": {
 				"formula": "6 per level",
-				"average": 21
+				"average": 27
 			},
 			"speed": {
 				"walk": 30
@@ -280,19 +286,19 @@
 			"con": 13,
 			"int": 8,
 			"wis": 12,
-			"cha": 16,
+			"cha": 18,
 			"save": {
 				"wis": "+3",
-				"cha": "+5"
+				"cha": "+6"
 			},
 			"skill": {
-				"deception": "+5",
-				"persuasion": "+5",
-				"perception": "+3",
+				"deception": "+6",
+				"persuasion": "+6",
+				"perception": "+4",
 				"sleight of hand": "+5",
 				"stealth": "+5"
 			},
-			"senses": ["Passive Perception: 13"],
+			"senses": ["Passive Perception: 14"],
 			"languages": ["Common", "Cant"],
 			"resist": ["fire"],
 			"trait": [
@@ -300,7 +306,7 @@
 				{
 					"name": "Pact Boon: {@optfeature Pact of the Chain|PHB}",
 					"entries": [
-						"Summons a summer cardinal with {@creature raven|PHB} stats, does fire damage. Vanishes if it dies, you die or you are separated by more than 5 miles."
+						"Summons a summer cardinal with {@creature raven|PHB} stats. Vanishes if it dies, you die or you are separated by more than 5 miles."
 					]
 				},
 				{
@@ -318,12 +324,6 @@
 				{
 					"name": "Tool Proficiency",
 					"entries": ["{@item Thieves' Tools|PHB} {@dice 1d20+5|+5}"]
-				},
-				{
-					"name": "Magic Item",
-					"entries": [
-						"Protective Bracers: can cast {@spell Blade Ward|PHB} as a bonus action once per day."
-					]
 				}
 			],
 			"action": [
@@ -345,24 +345,24 @@
 					"name": "Spellcasting",
 					"entries": [
 						{
-							"name": "Spell Attack {@dice 1d20+5|+5}, Spell Save {@dc 13}",
+							"name": "Spell Attack {@dice 1d20+6|+6}, Spell Save {@dc 14}",
 							"type": "spellcasting",
 							"ability": "cha",
 							"spells": {
 								"0": {
 									"spells": [
-										"{@spell eldritch blast|PHB|Eldritch Blast}",
-										"{@spell friends|PHB|Friends}"
+										"{@spell Eldritch Blast|PHB}",
+										"{@spell Friends|PHB}"
 									]
 								},
 								"2": {
 									"slots": 2,
 									"spells": [
 										"{@spell Burning Hands|PHB} (Patron)",
+										"{@spell Find Familiar|PHB} (Ritual)",
 										"{@spell Hellish Rebuke|PHB} (Reaction)",
 										"{@spell Hex|PHB} (Bonus Action)",
-										"{@spell Scorching Ray|PHB}",
-										"{@spell Find Familiar|PHB} (Ritual)"
+										"{@spell Scorching Ray|PHB}"
 									]
 								}
 							}
@@ -388,7 +388,7 @@
 		},
 		{
 			"name": "Doryan of Ryderia",
-			"level": 3,
+			"level": 4,
 			"source": "BalochPCs",
 			"size": ["M"],
 			"type": "Human Cleric of Talee (Tempest Domain)",
@@ -400,29 +400,29 @@
 				}
 			],
 			"hp": {
-				"formula": "7 per level",
-				"average": 24
+				"formula": "8 per level",
+				"average": 35
 			},
 			"speed": {
 				"walk": 30
 			},
 			"str": 14,
 			"dex": 12,
-			"con": 15,
+			"con": 16,
 			"int": 8,
-			"wis": 17,
+			"wis": 18,
 			"cha": 10,
 			"save": {
-				"wis": "+5",
+				"wis": "+6",
 				"cha": "+2"
 			},
 			"skill": {
-				"medicine": "+5",
+				"medicine": "+6",
 				"religion": "+1",
-				"survival": "+4",
-				"perception": "+5"
+				"survival": "+6",
+				"perception": "+6"
 			},
-			"senses": ["Passive Perception: 15"],
+			"senses": ["Passive Perception: 16"],
 			"languages": ["Common", "Northern"],
 			"trait": [
 				{ "name": "Initiative", "entries": ["{@dice 1d20+1|+1}"] },
@@ -432,13 +432,7 @@
 				},
 				{
 					"name": "Tool Proficiency",
-					"entries": ["{@item Herbalism Kit|PHB} {@dice 1d20+5|+5}"]
-				},
-				{
-					"name": "Magic Item",
-					"entries": [
-						"Amulet of Compassion: can cast {@spell Cure Wounds|PHB} once per day."
-					]
+					"entries": ["{@item Herbalism Kit|PHB} {@dice 1d20+6|+6}"]
 				}
 			],
 			"action": [
@@ -459,7 +453,7 @@
 				{
 					"name": "Spellcasting",
 					"entries": [
-						"Spell Save {@dc 13}, Spell Attack {@dice 1d20+5|+5}",
+						"Spell Save {@dc 14}, Spell Attack {@dice 1d20+6|+6}",
 						{
 							"name": "Spells",
 							"type": "spellcasting",
@@ -467,24 +461,25 @@
 							"spells": {
 								"0": {
 									"spells": [
-										"{@spell Thaumaturgy|PHB}",
+										"{@spell Light|PHB}",
 										"{@spell Spare the Dying|PHB}",
-										"{@spell Word of Radiance|XGE}"
+										"{@spell Thaumaturgy|PHB}",
+										"{@spell Toll the Dead|XGE}"
 									]
 								},
 								"1": {
 									"slots": 4,
 									"spells": [
-										"{@spell Thunderwave|PHB}",
 										"{@spell Fog Cloud|PHB}",
+										"{@spell Thunderwave|PHB}",
 										"{@link Cleric Spells|http://dnd5e.wikidot.com/spells:cleric}"
 									]
 								},
 								"2": {
 									"slots": 2,
 									"spells": [
-										"{@spell Shatter|PHB}",
 										"{@spell Gust of Wind|PHB}",
+										"{@spell Shatter|PHB}",
 										"{@link Cleric Spells|http://dnd5e.wikidot.com/spells:cleric}"
 									]
 								}
@@ -517,7 +512,7 @@
 		},
 		{
 			"name": "Jefar Parviz",
-			"level": 3,
+			"level": 4,
 			"source": "BalochPCs",
 			"size": ["M"],
 			"type": "Part-Orc Rogue (Soulknife)",
@@ -530,7 +525,7 @@
 			],
 			"hp": {
 				"formula": "6 per level",
-				"average": 21
+				"average": 27
 			},
 			"speed": {
 				"walk": 30
@@ -539,7 +534,7 @@
 			"dex": 16,
 			"con": 12,
 			"int": 8,
-			"wis": 13,
+			"wis": 14,
 			"cha": 14,
 			"save": {
 				"dex": "+5",
@@ -551,7 +546,7 @@
 				"persuasion": "+4",
 				"performance": "+6"
 			},
-			"senses": ["Passive Perception: 11"],
+			"senses": ["Passive Perception: 12"],
 			"languages": ["Common", "Druidic"],
 			"trait": [
 				{ "name": "Initiative", "entries": ["{@dice 1d20+3|+3}"] },
@@ -586,6 +581,29 @@
 				{
 					"name": "{@subclassFeature Psychic Blades|Rogue|PHB|Soulknife|TCE|3}",
 					"entries": []
+				},
+				{
+					"name": "Spellcasting",
+					"entries": [
+						"Spell Save {@dc 13}, Spell Attack {@dice 1d20+5|+5}",
+						{
+							"name": "Spells",
+							"type": "spellcasting",
+							"ability": "wis",
+							"spells": {
+								"1": {
+									"slots": 4,
+									"spells": [
+										"{@spell Tasha's Hideous Laughter|PHB}"
+									]
+								},
+								"2": {
+									"slots": 2,
+									"spells": ["{@spell Misty Step|PHB}"]
+								}
+							}
+						}
+					]
 				}
 			],
 			"bonus": [
